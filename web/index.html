@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SortTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confettiCanvas"></canvas>
+
+  <div class="container">
+    <nav class="top-credits">
+      <div class="top-author">
+        <span>Desenvolvido por <a href="https://www.instagram.com/marialuiza_prata" target="_blank" rel="noopener noreferrer">@marialuiza_prata</a></span>
+      </div>
+      <div class="top-links">
+        <a href="https://www.linkedin.com/in/maria-luiza-prata-a342812b3" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="top-divider">•</span>
+        <a href="https://github.com/Malu-Prata" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1 class="title">
+        SortTech<button class="help-btn" id="helpBtn" title="Como funciona o SortTech?" aria-label="Ajuda">?</button>
+      </h1>
+    </header>
+
+    <div class="help-modal" id="helpModal">
+      <div class="help-modal-card">
+        <button class="help-modal-close" id="helpModalClose" aria-label="Fechar">&times;</button>
+        <h3 class="help-modal-title">Como funciona o SortTech</h3>
+        <ul class="help-modal-list">
+          <li><strong>1. Áreas de Estudo:</strong> Clique em uma ou mais áreas para filtrar, ou deixe nenhuma selecionada para pesquisar livremente entre todos os temas!</li>
+          <li><strong>2. Sorteio de Tema:</strong> Clique em <em>Sortear Tema de Estudo</em> para receber um tópico aleatório.</li>
+          <li><strong>3. Tópicos de Pesquisa:</strong> Clique na setinha de termos-chave para abrir tópicos recomendados.</li>
+          <li><strong>4. Cronômetro Pomodoro:</strong> Clique no botão <em>Iniciar Pesquisa</em> para abrir um timer de 30 minutos de foco total no tema!</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section-areas">
+      <div class="section-header">
+        <h2>Selecione as Áreas</h2>
+      </div>
+
+      <div class="areas-grid" id="areasGrid"></div>
+
+      <p class="subtitle">
+        Escolha uma das <strong>áreas da computação</strong> e sorteie o seu próximo tópico de estudo.
+      </p>
+    </section>
+
+    <section class="section-result">
+      <div class="result-card revealed" id="resultCard">
+        <div class="result-content" id="resultContent">
+          <div class="result-area-tag" id="resultAreaTag">Web e Mobile</div>
+          <h3 class="result-title" id="resultTitle">Carregando tema...</h3>
+
+          <details class="topics-accordion" id="topicsAccordion">
+            <summary class="topics-summary">
+              <span>Tópicos e termos-chave para pesquisa</span>
+              <span class="accordion-arrow">▼</span>
+            </summary>
+            <ul class="topics-list" id="resultKeywords"></ul>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-action">
+      <button id="btnSortear" class="btn-sortear">
+        <span class="btn-text">Sortear Tema de Estudo</span>
+      </button>
+
+      <button id="btnIniciar" class="btn-iniciar">
+        Iniciar Pesquisa
+      </button>
+    </section>
+
+    <details class="history-accordion" id="sectionHistory" style="display: none;">
+      <summary class="history-summary">
+        <span class="history-summary-title">Histórico de Sorteios (<span id="historyCount">0</span>)</span>
+        <span class="history-arrow">▼</span>
+      </summary>
+      <div class="history-body">
+        <div class="history-toolbar">
+          <span class="history-hint">Tópicos sorteados nesta sessão</span>
+          <button id="btnClearHistory" class="btn-clear-history">Limpar histórico</button>
+        </div>
+        <div class="history-list" id="historyList"></div>
+      </div>
+    </details>
+
+    <footer class="footer">
+      <p>Desenvolvido com Java e JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="temas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

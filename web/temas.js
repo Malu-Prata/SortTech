@@ -1,0 +1,1023 @@
+window.DADOS_AREAS = [
+  {
+    "id": "web",
+    "nome": "Desenvolvimento Web e Mobile",
+    "descricao": "Frontend, Backend, APIs, Bancos de Dados e Frameworks modernos",
+    "temas": [
+      {
+        "id": "web-1",
+        "titulo": "APIs RESTful e GraphQL",
+        "topicosChave": [
+          "Verbos HTTP",
+          "JSON",
+          "Query e Mutation",
+          "Autenticação",
+          "Cache"
+        ]
+      },
+      {
+        "id": "web-2",
+        "titulo": "Componentização e Gerenciamento de Estado",
+        "topicosChave": [
+          "Hooks",
+          "Props",
+          "Context API / Redux",
+          "Re-renderização"
+        ]
+      },
+      {
+        "id": "web-3",
+        "titulo": "Autenticação e Autorização Web",
+        "topicosChave": [
+          "JWT",
+          "OAuth 2.0",
+          "CORS",
+          "HttpOnly Cookies",
+          "RBAC"
+        ]
+      },
+      {
+        "id": "web-4",
+        "titulo": "Otimização de Performance e Core Web Vitals",
+        "topicosChave": [
+          "Core Web Vitals",
+          "Lazy Loading",
+          "Minificação",
+          "CDN",
+          "Lighthouse"
+        ]
+      },
+      {
+        "id": "web-5",
+        "titulo": "Bancos de Dados Relacionais e Não-Relacionais",
+        "topicosChave": [
+          "PostgreSQL",
+          "MongoDB",
+          "Modelagem ER",
+          "Índices",
+          "ORMs"
+        ]
+      },
+      {
+        "id": "web-6",
+        "titulo": "Progressive Web Apps e Service Workers",
+        "topicosChave": [
+          "Manifest.json",
+          "Service Workers",
+          "Cache Storage",
+          "Push Notifications"
+        ]
+      },
+      {
+        "id": "web-7",
+        "titulo": "TypeScript no Desenvolvimento Moderno",
+        "topicosChave": [
+          "Generics",
+          "Interfaces vs Types",
+          "Strict Mode",
+          "Transpilação"
+        ]
+      },
+      {
+        "id": "web-8",
+        "titulo": "Server-Side Rendering e Hydration",
+        "topicosChave": [
+          "Next.js",
+          "Nuxt",
+          "SSR vs SSG",
+          "Hydration",
+          "Streaming HTML"
+        ]
+      },
+      {
+        "id": "web-9",
+        "titulo": "WebSockets e Comunicação Bidirecional",
+        "topicosChave": [
+          "Socket.IO",
+          "Event-Driven",
+          "SSE (Server-Sent Events)",
+          "Handshake"
+        ]
+      },
+      {
+        "id": "web-10",
+        "titulo": "Micro-Frontends e Arquitetura Modular",
+        "topicosChave": [
+          "Module Federation",
+          "Web Components",
+          "Isolamento de Estilos",
+          "Roteamento"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ia",
+    "nome": "Inteligência Artificial e Dados",
+    "descricao": "Machine Learning, Deep Learning, LLMs, NLP e Ciência de Dados",
+    "temas": [
+      {
+        "id": "ia-1",
+        "titulo": "Redes Neurais Artificiais e Deep Learning",
+        "topicosChave": [
+          "Gradiente Descendente",
+          "ReLU / Sigmoid",
+          "Camadas Ocultas",
+          "Loss Functions"
+        ]
+      },
+      {
+        "id": "ia-2",
+        "titulo": "Processamento de Linguagem Natural e LLMs",
+        "topicosChave": [
+          "Mecanismo de Atenção",
+          "Tokenização",
+          "Transformers",
+          "Fine-Tuning",
+          "Embeddings"
+        ]
+      },
+      {
+        "id": "ia-3",
+        "titulo": "Aprendizado Supervisionado vs Não Supervisionado",
+        "topicosChave": [
+          "Regressão Linear",
+          "K-Means",
+          "Random Forest",
+          "Overfitting vs Underfitting"
+        ]
+      },
+      {
+        "id": "ia-4",
+        "titulo": "Engenharia de Prompts e RAG (Retrieval-Augmented)",
+        "topicosChave": [
+          "Vector DBs",
+          "Cosine Similarity",
+          "System Prompts",
+          "Chunking"
+        ]
+      },
+      {
+        "id": "ia-5",
+        "titulo": "Análise Exploratória de Dados (EDA)",
+        "topicosChave": [
+          "Pandas / NumPy",
+          "Histogramas",
+          "Boxplots",
+          "Outliers",
+          "Limpeza de Dados"
+        ]
+      },
+      {
+        "id": "ia-6",
+        "titulo": "Visão Computacional e Redes Convolucionais (CNN)",
+        "topicosChave": [
+          "Convoluções",
+          "Pooling",
+          "YOLO / OpenCV",
+          "Data Augmentation"
+        ]
+      },
+      {
+        "id": "ia-7",
+        "titulo": "Métricas de Avaliação de Modelos",
+        "topicosChave": [
+          "Matriz de Confusão",
+          "F1-Score",
+          "Recall",
+          "ROC-AUC",
+          "Cross-Validation"
+        ]
+      },
+      {
+        "id": "ia-8",
+        "titulo": "MLOps e Versionamento de Modelos",
+        "topicosChave": [
+          "MLflow",
+          "DVC",
+          "Pipeline de Retreino",
+          "Model Registry",
+          "Feature Store"
+        ]
+      },
+      {
+        "id": "ia-9",
+        "titulo": "Modelos de Difusão e IA Generativa Visual",
+        "topicosChave": [
+          "Stable Diffusion",
+          "Latent Space",
+          "Denoising",
+          "LoRA",
+          "ControlNet"
+        ]
+      },
+      {
+        "id": "ia-10",
+        "titulo": "Aprendizado por Reforço (RL)",
+        "topicosChave": [
+          "Q-Learning",
+          "Reward Function",
+          "Policy Gradient",
+          "Ambientes Gym",
+          "Exploration vs Exploitation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seguranca",
+    "nome": "Cibersegurança e Redes",
+    "descricao": "Defesa, Pentest, Criptografia, OWASP, Protocolos e Identidade",
+    "temas": [
+      {
+        "id": "sec-1",
+        "titulo": "OWASP Top 10 e Vulnerabilidades Web",
+        "topicosChave": [
+          "SQLi",
+          "XSS",
+          "Sanitização de Inputs",
+          "CSRF Tokens",
+          "WAF"
+        ]
+      },
+      {
+        "id": "sec-2",
+        "titulo": "Criptografia Simétrica vs Assimétrica",
+        "topicosChave": [
+          "AES",
+          "RSA",
+          "Hashing",
+          "Salting",
+          "Assinatura Digital"
+        ]
+      },
+      {
+        "id": "sec-3",
+        "titulo": "Fundamentos do Modelo OSI e Pilha TCP/IP",
+        "topicosChave": [
+          "TCP 3-way Handshake",
+          "UDP",
+          "Sub-redes / CIDR",
+          "Portas e Sockets"
+        ]
+      },
+      {
+        "id": "sec-4",
+        "titulo": "Arquitetura Zero Trust e Gestão de Identidade (IAM)",
+        "topicosChave": [
+          "MFA",
+          "Princípio do Menor Privilégio",
+          "Segmentação de Rede",
+          "SSO"
+        ]
+      },
+      {
+        "id": "sec-5",
+        "titulo": "Análise de Pacotes e Tráfego com Wireshark",
+        "topicosChave": [
+          "Packet Sniffing",
+          "Filtros de Exibição",
+          "PCAP",
+          "Análise de Handshakes"
+        ]
+      },
+      {
+        "id": "sec-6",
+        "titulo": "Engenharia Social e Proteção Contra Phishing",
+        "topicosChave": [
+          "Spear Phishing",
+          "Spoofing",
+          "DMARC/SPF/DKIM",
+          "Conscientização"
+        ]
+      },
+      {
+        "id": "sec-7",
+        "titulo": "Segurança de APIs e Prevenção de Ataques DDoS",
+        "topicosChave": [
+          "Rate Limiting",
+          "API Gateway",
+          "DDoS Mitigation",
+          "Cloudflare / CDN"
+        ]
+      },
+      {
+        "id": "sec-8",
+        "titulo": "Metodologias de Teste de Intrusão (Pentest)",
+        "topicosChave": [
+          "Reconhecimento",
+          "Enumeração",
+          "Metasploit",
+          "Burp Suite",
+          "Relatório de Vulnerabilidades"
+        ]
+      },
+      {
+        "id": "sec-9",
+        "titulo": "Segurança de Contêineres e Imagens",
+        "topicosChave": [
+          "Docker Rootless",
+          "Scan com Trivy",
+          "Secrets em Build",
+          "AppArmor / Seccomp"
+        ]
+      },
+      {
+        "id": "sec-10",
+        "titulo": "Gestão de Chaves e Certificados TLS/SSL",
+        "topicosChave": [
+          "Let's Encrypt",
+          "PKI",
+          "Renovação Automática",
+          "Cipher Suites",
+          "HSTS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "engenharia",
+    "nome": "Engenharia de Software e Algoritmos",
+    "descricao": "Padrões de Projeto, Clean Code, SOLID, Estruturas de Dados e Arquitetura",
+    "temas": [
+      {
+        "id": "eng-1",
+        "titulo": "Padrões de Projeto (Design Patterns - GoF)",
+        "topicosChave": [
+          "Strategy",
+          "Observer",
+          "Factory Method",
+          "Adapter",
+          "Singleton"
+        ]
+      },
+      {
+        "id": "eng-2",
+        "titulo": "Princípios SOLID e Código Limpo (Clean Code)",
+        "topicosChave": [
+          "Single Responsibility",
+          "Open/Closed",
+          "Liskov Substitution",
+          "Interface Segregation",
+          "Dependency Inversion"
+        ]
+      },
+      {
+        "id": "eng-3",
+        "titulo": "Estruturas de Dados Essenciais",
+        "topicosChave": [
+          "Hash Collisions",
+          "Árvore AVL",
+          "Grafos / Matriz de Adjacência",
+          "Heap"
+        ]
+      },
+      {
+        "id": "eng-4",
+        "titulo": "Complexidade de Tempo e Espaço (Notação Big-O)",
+        "topicosChave": [
+          "Big-O",
+          "Melhor / Pior Caso",
+          "Consumo de Memória",
+          "Análise Assintótica"
+        ]
+      },
+      {
+        "id": "eng-5",
+        "titulo": "Testes Automatizados e Metodologia TDD",
+        "topicosChave": [
+          "JUnit / Assertions",
+          "Mocks / Stubs",
+          "Pirâmide de Testes",
+          "Cobertura de Código"
+        ]
+      },
+      {
+        "id": "eng-6",
+        "titulo": "Arquitetura Limpa e Domain-Driven Design (DDD)",
+        "topicosChave": [
+          "Clean Architecture",
+          "Entidades vs DTOs",
+          "Inversão de Controle",
+          "Value Objects"
+        ]
+      },
+      {
+        "id": "eng-7",
+        "titulo": "Concorrência, Multithreading e Paralelismo",
+        "topicosChave": [
+          "Threads",
+          "Locks / Mutex",
+          "Deadlocks",
+          "Volatile",
+          "ThreadPoolExecutor"
+        ]
+      },
+      {
+        "id": "eng-8",
+        "titulo": "Algoritmos de Grafos e Caminho Mínimo",
+        "topicosChave": [
+          "Dijkstra",
+          "BFS e DFS",
+          "A* (A-Star)",
+          "Ciclos em Grafos",
+          "Árvore Geradora Mínima"
+        ]
+      },
+      {
+        "id": "eng-9",
+        "titulo": "Refatoração e Identificação de Code Smells",
+        "topicosChave": [
+          "Extração de Métodos",
+          "Duplicação",
+          "Classes Deus",
+          "Dívida Técnica",
+          "Linters"
+        ]
+      },
+      {
+        "id": "eng-10",
+        "titulo": "Microsserviços vs Monólitos Modulares",
+        "topicosChave": [
+          "Event-Driven",
+          "Saga Pattern",
+          "Mensageria",
+          "Bancos Independentes",
+          "Service Discovery"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "devops",
+    "nome": "DevOps e Cloud Computing",
+    "descricao": "Containers, Kubernetes, CI/CD, Terraform, Nuvem e Observabilidade",
+    "temas": [
+      {
+        "id": "ops-1",
+        "titulo": "Conteinerização com Docker",
+        "topicosChave": [
+          "Dockerfile",
+          "Docker Compose",
+          "Volumes",
+          "Networks",
+          "Multi-stage"
+        ]
+      },
+      {
+        "id": "ops-2",
+        "titulo": "Orquestração com Kubernetes (K8s)",
+        "topicosChave": [
+          "Pods",
+          "Deployments",
+          "Services e Ingress",
+          "ConfigMaps",
+          "HPA"
+        ]
+      },
+      {
+        "id": "ops-3",
+        "titulo": "Pipelines de CI/CD Automatizadas",
+        "topicosChave": [
+          "GitHub Actions",
+          "Build Automation",
+          "Artifacts",
+          "Secrets Management"
+        ]
+      },
+      {
+        "id": "ops-4",
+        "titulo": "Infraestrutura como Código (IaC) com Terraform",
+        "topicosChave": [
+          "HCL",
+          "Terraform Plan/Apply",
+          "State File",
+          "Módulos"
+        ]
+      },
+      {
+        "id": "ops-5",
+        "titulo": "Observabilidade: Métricas, Logs e Rastreamento",
+        "topicosChave": [
+          "Prometheus",
+          "Grafana",
+          "Structured Logging",
+          "Tracing Distribuído"
+        ]
+      },
+      {
+        "id": "ops-6",
+        "titulo": "Estratégias de Deploy Modernas",
+        "topicosChave": [
+          "Blue-Green",
+          "Canary",
+          "Feature Flags",
+          "Zero-downtime Rollback"
+        ]
+      },
+      {
+        "id": "ops-7",
+        "titulo": "Fundamentos de Arquitetura em Nuvem (AWS/GCP)",
+        "topicosChave": [
+          "Compute Instances",
+          "Object Storage",
+          "Serverless",
+          "VPC e Subnets"
+        ]
+      },
+      {
+        "id": "ops-8",
+        "titulo": "Servidores Web Reversos e Load Balancing",
+        "topicosChave": [
+          "Nginx",
+          "Caddy",
+          "Algoritmos de Round-Robin",
+          "Proxy Pass",
+          "Terminação SSL"
+        ]
+      },
+      {
+        "id": "ops-9",
+        "titulo": "GitOps e Entrega Declarativa",
+        "topicosChave": [
+          "ArgoCD",
+          "Flux",
+          "Repositório como Fonte da Verdade",
+          "Sincronização de Estado"
+        ]
+      },
+      {
+        "id": "ops-10",
+        "titulo": "Engenharia de Confiabilidade (SRE)",
+        "topicosChave": [
+          "SLO e SLA",
+          "Error Budgets",
+          "Post-mortem sem Culpa",
+          "Runbooks",
+          "Alerting"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "games",
+    "nome": "Desenvolvimento de Jogos",
+    "descricao": "Motores de Jogos, Gráficos 3D, Shaders, Física e Gameplay",
+    "temas": [
+      {
+        "id": "game-1",
+        "titulo": "Game Loop, Delta Time e Física em Jogos",
+        "topicosChave": [
+          "Game Loop",
+          "Delta Time",
+          "Colisões AABB",
+          "Gravidade",
+          "Rigidbody"
+        ]
+      },
+      {
+        "id": "game-2",
+        "titulo": "Shaders e Pipeline Gráfico",
+        "topicosChave": [
+          "Vertex Shader",
+          "Fragment Shader",
+          "GLSL / HLSL",
+          "Iluminação Blinn-Phong",
+          "PBR"
+        ]
+      },
+      {
+        "id": "game-3",
+        "titulo": "Arquitetura ECS (Entity Component System)",
+        "topicosChave": [
+          "Entities",
+          "Components",
+          "Systems",
+          "Data-Oriented Design",
+          "Performance de Cache"
+        ]
+      },
+      {
+        "id": "game-4",
+        "titulo": "Inteligência Artificial para NPCs e Inimigos",
+        "topicosChave": [
+          "Finite State Machines",
+          "Behavior Trees",
+          "NavMesh e Pathfinding",
+          "Linha de Visão"
+        ]
+      },
+      {
+        "id": "game-5",
+        "titulo": "Otimização Gráfica e Level of Detail (LOD)",
+        "topicosChave": [
+          "Draw Calls",
+          "Occlusion Culling",
+          "LOD",
+          "Texture Atlases",
+          "Profilers"
+        ]
+      },
+      {
+        "id": "game-6",
+        "titulo": "Multiplayer e Sincronização em Tempo Real",
+        "topicosChave": [
+          "Client-Side Prediction",
+          "Server Reconciliation",
+          "Lag Compensation",
+          "Sockets"
+        ]
+      },
+      {
+        "id": "game-7",
+        "titulo": "Áudio Espacial e Sistemas de Som Interativos",
+        "topicosChave": [
+          "Áudio Posicional 3D",
+          "FMOD",
+          "Transições Dinâmicas",
+          "Atenuação de Distância"
+        ]
+      },
+      {
+        "id": "game-8",
+        "titulo": "Animação Esquelética e Cinemática Inversa (IK)",
+        "topicosChave": [
+          "Rigging",
+          "Skinning",
+          "Inverse Kinematics",
+          "Blend Trees",
+          "Root Motion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dados",
+    "nome": "Engenharia de Dados",
+    "descricao": "Pipelines de ETL, Big Data, Data Lakes, Kafka e Processamento Distribuído",
+    "temas": [
+      {
+        "id": "data-1",
+        "titulo": "Pipelines de ETL/ELT com Apache Airflow",
+        "topicosChave": [
+          "DAGs",
+          "Operadores",
+          "Sensores",
+          "Agendamento",
+          "Monitoramento de Falhas"
+        ]
+      },
+      {
+        "id": "data-2",
+        "titulo": "Processamento de Fluxos em Tempo Real com Apache Kafka",
+        "topicosChave": [
+          "Tópicos e Partições",
+          "Producers e Consumers",
+          "Consumer Groups",
+          "Kafka Streams",
+          "Offset"
+        ]
+      },
+      {
+        "id": "data-3",
+        "titulo": "Computação Distribuída com Apache Spark",
+        "topicosChave": [
+          "RDDs",
+          "DataFrames",
+          "Spark SQL",
+          "Lazy Evaluation",
+          "Particionamento em Memória"
+        ]
+      },
+      {
+        "id": "data-4",
+        "titulo": "Arquitetura Data Lakehouse e Formatos Abertos",
+        "topicosChave": [
+          "Delta Lake",
+          "Apache Iceberg",
+          "Parquet",
+          "Transações ACID",
+          "Time Travel"
+        ]
+      },
+      {
+        "id": "data-5",
+        "titulo": "Modelagem Dimensional e Data Warehouses",
+        "topicosChave": [
+          "Star Schema",
+          "Snowflake Schema",
+          "Tabelas Fato e Dimensão",
+          "Slowly Changing Dimensions"
+        ]
+      },
+      {
+        "id": "data-6",
+        "titulo": "Transformação e Testes de Dados com dbt",
+        "topicosChave": [
+          "dbt Models",
+          "Jinja e Macros",
+          "Testes de Schema",
+          "Documentação Automatizada",
+          "Lineage"
+        ]
+      },
+      {
+        "id": "data-7",
+        "titulo": "Bancos de Dados NoSQL Colunares e de Grafos",
+        "topicosChave": [
+          "Cassandra",
+          "Neo4j",
+          "Cypher",
+          "Escalabilidade Horizontal",
+          "Consistência Eventual"
+        ]
+      },
+      {
+        "id": "data-8",
+        "titulo": "Governança e Catálogo de Metadados",
+        "topicosChave": [
+          "Linhagem de Dados",
+          "Data Catalog",
+          "LGPD / GDPR",
+          "Qualidade de Dados",
+          "Great Expectations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "baixo-nivel",
+    "nome": "Sistemas de Baixo Nível",
+    "descricao": "Compiladores, Gerenciamento de Memória, Kernel, Rust, C e Assembly",
+    "temas": [
+      {
+        "id": "low-1",
+        "titulo": "Gerenciamento Manual de Memória e Ponteiros em C",
+        "topicosChave": [
+          "Malloc e Free",
+          "Stack vs Heap",
+          "Ponteiros e Aritmética",
+          "Memory Leaks",
+          "Valgrind"
+        ]
+      },
+      {
+        "id": "low-2",
+        "titulo": "Rust: Sistema de Posse e Empréstimo (Ownership)",
+        "topicosChave": [
+          "Ownership",
+          "Borrowing",
+          "Lifetimes",
+          "Zero-Cost Abstractions",
+          "Sem Garbage Collector"
+        ]
+      },
+      {
+        "id": "low-3",
+        "titulo": "Construção de Compiladores e Interpretadores",
+        "topicosChave": [
+          "Análise Léxica (Lexer)",
+          "Análise Sintática (Parser)",
+          "AST",
+          "Geração de Bytecode",
+          "LLVM"
+        ]
+      },
+      {
+        "id": "low-4",
+        "titulo": "Arquitetura de Computadores e Assembly x86/ARM",
+        "topicosChave": [
+          "Registradores",
+          "Instruções de Pulo",
+          "Chamada de Funções",
+          "Endereçamento",
+          "Pipeline de CPU"
+        ]
+      },
+      {
+        "id": "low-5",
+        "titulo": "Chamadas de Sistema (Syscalls) e Kernel Linux",
+        "topicosChave": [
+          "User Space vs Kernel Space",
+          "Syscalls",
+          "Processos e Forks",
+          "Sinais do SO",
+          "File Descriptors"
+        ]
+      },
+      {
+        "id": "low-6",
+        "titulo": "WebAssembly (Wasm) e Execução de Baixo Nível",
+        "topicosChave": [
+          "Compilação para Wasm",
+          "Linear Memory",
+          "Interoperabilidade JS",
+          "Wasmtime",
+          "WASI"
+        ]
+      },
+      {
+        "id": "low-7",
+        "titulo": "Estruturas de Dados Lock-Free e Primitivas Atômicas",
+        "topicosChave": [
+          "Compare-and-Swap (CAS)",
+          "Atomic Operations",
+          "Memory Barriers",
+          "Spinlocks",
+          "Sem Deadlocks"
+        ]
+      },
+      {
+        "id": "low-8",
+        "titulo": "Localidade de Cache e Otimização para Hardware",
+        "topicosChave": [
+          "Cache L1/L2/L3",
+          "Cache Misses",
+          "Acesso Sequencial",
+          "Alinhamento de Memória",
+          "SIMD"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qa",
+    "nome": "Qualidade e Testes de Software",
+    "descricao": "Automação E2E, Testes de Performance, Pirâmide de Testes e BDD",
+    "temas": [
+      {
+        "id": "qa-1",
+        "titulo": "Automação de Testes End-to-End com Playwright",
+        "topicosChave": [
+          "Localizadores Resilientes",
+          "Auto-Wait",
+          "Gravação de Sessão",
+          "Testes Cross-Browser",
+          "CI/CD"
+        ]
+      },
+      {
+        "id": "qa-2",
+        "titulo": "Testes de Carga e Estresse com k6",
+        "topicosChave": [
+          "Virtual Users (VUs)",
+          "Thresholds de Latência",
+          "Cenários de Pico",
+          "Métricas Percentis",
+          "Grafana k6"
+        ]
+      },
+      {
+        "id": "qa-3",
+        "titulo": "Testes de Contrato para Microsserviços com Pact",
+        "topicosChave": [
+          "Consumer-Driven Contracts",
+          "Pact Broker",
+          "Evolução de APIs",
+          "Evitar Quebras em Produção"
+        ]
+      },
+      {
+        "id": "qa-4",
+        "titulo": "Testes de Mutação e Cobertura Efetiva",
+        "topicosChave": [
+          "Pitest / Stryker",
+          "Mutantes Sobreviventes",
+          "Além do Code Coverage",
+          "Qualidade dos Assertions"
+        ]
+      },
+      {
+        "id": "qa-5",
+        "titulo": "Desenvolvimento Guiado por Comportamento (BDD)",
+        "topicosChave": [
+          "Linguagem Gherkin",
+          "Given-When-Then",
+          "Cucumber",
+          "Especificações Executáveis"
+        ]
+      },
+      {
+        "id": "qa-6",
+        "titulo": "Estratégias de Testes em Pirâmide e Shift-Left",
+        "topicosChave": [
+          "Pirâmide de Testes",
+          "Shift-Left Testing",
+          "Testes de Integração",
+          "Feedback Rápido"
+        ]
+      },
+      {
+        "id": "qa-7",
+        "titulo": "Testes de Regressão Visual Automatizados",
+        "topicosChave": [
+          "Diff de Pixels",
+          "Snapshots",
+          "Componentes Visuais",
+          "Percy / Applitools",
+          "Responsividade"
+        ]
+      },
+      {
+        "id": "qa-8",
+        "titulo": "Mocking e Ambientes de Teste Efêmeros",
+        "topicosChave": [
+          "Testcontainers",
+          "WireMock",
+          "Bancos de Teste Descartáveis",
+          "Isolamento de Estado"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "design",
+    "nome": "Design de Interface e Acessibilidade",
+    "descricao": "UI/UX, Design Systems, Tokens de Design, WCAG e Experiência do Usuário",
+    "temas": [
+      {
+        "id": "des-1",
+        "titulo": "Design Systems e Tokens de Design",
+        "topicosChave": [
+          "Figma Tokens",
+          "Consistência Visual",
+          "Componentes Reutilizáveis",
+          "Documentação Storybook"
+        ]
+      },
+      {
+        "id": "des-2",
+        "titulo": "Diretrizes de Acessibilidade Web (WCAG 2.2)",
+        "topicosChave": [
+          "Contraste de Cores",
+          "Navegação por Teclado",
+          "Leitores de Tela",
+          "Atributos ARIA",
+          "Foco Visível"
+        ]
+      },
+      {
+        "id": "des-3",
+        "titulo": "Hierarquia Visual, Espaçamento e Tipografia",
+        "topicosChave": [
+          "Escalas Modulares",
+          "Grid de 8pt",
+          "Ritmo Vertical",
+          "Pesos Tipográficos",
+          "Escaneabilidade"
+        ]
+      },
+      {
+        "id": "des-4",
+        "titulo": "Microinterações e Animações com Propósito",
+        "topicosChave": [
+          "Feedback Tátil/Visual",
+          "Timing Functions (Bezier)",
+          "Estados de Loading",
+          "Motion Design"
+        ]
+      },
+      {
+        "id": "des-5",
+        "titulo": "Pesquisa com Usuários e Mapeamento de Jornada",
+        "topicosChave": [
+          "User Journey Map",
+          "Personas",
+          "Testes de Usabilidade",
+          "Mapas de Calor (Heatmaps)",
+          "Heurísticas de Nielsen"
+        ]
+      },
+      {
+        "id": "des-6",
+        "titulo": "Arquitetura de Informação e Fluxos de Navegação",
+        "topicosChave": [
+          "Card Sorting",
+          "Wireframes",
+          "Árvore de Decisão",
+          "Redução de Carga Cognitiva"
+        ]
+      },
+      {
+        "id": "des-7",
+        "titulo": "Design Responsivo e Estratégia Mobile-First",
+        "topicosChave": [
+          "Breakpoints Fluidos",
+          "Áreas de Toque (Touch Targets)",
+          "Imagens Responsivas",
+          "Densidade de Pixels"
+        ]
+      },
+      {
+        "id": "des-8",
+        "titulo": "Acessibilidade para Daltonismo e Baixa Visão",
+        "topicosChave": [
+          "Simuladores de Daltonismo",
+          "Não Depender Apenas de Cor",
+          "Textos Alternativos (Alt)",
+          "Zoom sem Quebra"
+        ]
+      }
+    ]
+  }
+];

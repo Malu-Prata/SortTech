@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SortTech • Pomodoro 30 min</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <nav class="top-credits">
+      <div class="top-author">
+        <span>Desenvolvido por <a href="https://www.instagram.com/marialuiza_prata" target="_blank" rel="noopener noreferrer">@marialuiza_prata</a></span>
+      </div>
+      <div class="top-links">
+        <a href="https://www.linkedin.com/in/maria-luiza-prata-a342812b3" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="top-divider">•</span>
+        <a href="https://github.com/Malu-Prata" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </nav>
+
+    <main class="timer-content">
+      <div class="timer-area-tag" id="timerArea">Área de Estudo</div>
+      <h1 class="timer-title" id="timerTema">Tema de Estudo</h1>
+
+      <div class="timer-display-box">
+        <svg class="timer-svg" viewBox="0 0 260 260">
+          <circle class="timer-circle-bg" cx="130" cy="130" r="115" />
+          <circle class="timer-circle-progress" id="circleProgress" cx="130" cy="130" r="115" />
+        </svg>
+        <div class="timer-digits" id="timerDisplay">30:00</div>
+      </div>
+
+      <p class="timer-status" id="timerStatus">Tempo de foco em andamento</p>
+
+      <div class="timer-controls">
+        <button id="btnPause" class="btn-timer">Pausar</button>
+        <button id="btnReset" class="btn-timer-secondary">Reiniciar</button>
+        <a href="index.html" class="btn-timer-secondary">Voltar ao Sorteador</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Desenvolvido com Java e JavaScript</p>
+    </footer>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const tema = params.get("tema") || "Tema de Estudo";
+    const area = params.get("area") || "Área da Computação";
+
+    document.getElementById("timerTema").textContent = tema;
+    document.getElementById("timerArea").textContent = area.toUpperCase();
+    document.title = `${tema} • Pomodoro 30 min`;
+
+    const TEMPO_TOTAL_SEGUNDOS = 30 * 60;
+    let tempoRestante = TEMPO_TOTAL_SEGUNDOS;
+    let timerAtivo = true;
+    let intervalo = null;
+
+    const displayElement = document.getElementById("timerDisplay");
+    const statusElement = document.getElementById("timerStatus");
+    const btnPause = document.getElementById("btnPause");
+    const btnReset = document.getElementById("btnReset");
+    const circleProgress = document.getElementById("circleProgress");
+
+    const RAIO = 115;
+    const CIRCUNFERENCIA = 2 * Math.PI * RAIO;
+    circleProgress.style.strokeDasharray = `${CIRCUNFERENCIA} ${CIRCUNFERENCIA}`;
+    circleProgress.style.strokeDashoffset = "0";
+
+    function atualizarDisplay() {
+      const minutos = Math.floor(tempoRestante / 60);
+      const segundos = tempoRestante % 60;
+      const strMin = String(minutos).padStart(2, "0");
+      const strSeg = String(segundos).padStart(2, "0");
+      displayElement.textContent = `${strMin}:${strSeg}`;
+      document.title = `(${strMin}:${strSeg}) ${tema}`;
+
+      const fracao = (TEMPO_TOTAL_SEGUNDOS - tempoRestante) / TEMPO_TOTAL_SEGUNDOS;
+      const offset = CIRCUNFERENCIA * fracao;
+      circleProgress.style.strokeDashoffset = `${offset}`;
+    }
+
+    function iniciarContagem() {
+      if (intervalo) clearInterval(intervalo);
+      intervalo = setInterval(() => {
+        if (tempoRestante > 0) {
+          tempoRestante--;
+          atualizarDisplay();
+        } else {
+          finalizarPomodoro();
+        }
+      }, 1000);
+    }
+
+    function alternarPausa() {
+      if (timerAtivo) {
+        clearInterval(intervalo);
+        timerAtivo = false;
+        btnPause.textContent = "Continuar";
+        statusElement.textContent = "Cronômetro pausado";
+      } else {
+        iniciarContagem();
+        timerAtivo = true;
+        btnPause.textContent = "Pausar";
+        statusElement.textContent = "Tempo de foco em andamento";
+      }
+    }
+
+    function reiniciarTimer() {
+      clearInterval(intervalo);
+      tempoRestante = TEMPO_TOTAL_SEGUNDOS;
+      timerAtivo = true;
+      btnPause.textContent = "Pausar";
+      statusElement.textContent = "Tempo de foco em andamento";
+      atualizarDisplay();
+      iniciarContagem();
+    }
+
+    function finalizarPomodoro() {
+      clearInterval(intervalo);
+      timerAtivo = false;
+      statusElement.textContent = "Parabéns! Sessão de 30 minutos concluída!";
+      btnPause.textContent = "Iniciar Novo";
+      tocarAlertaFinal();
+    }
+
+    function tocarAlertaFinal() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const notas = [523.25, 659.25, 783.99, 1046.5];
+        notas.forEach((freq, idx) => {
+          setTimeout(() => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.frequency.value = freq;
+            gain.gain.setValueAtTime(0.08, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.4);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.4);
+          }, idx * 160);
+        });
+      } catch (e) {}
+    }
+
+    btnPause.addEventListener("click", () => {
+      if (tempoRestante === 0) {
+        reiniciarTimer();
+      } else {
+        alternarPausa();
+      }
+    });
+
+    btnReset.addEventListener("click", reiniciarTimer);
+
+    atualizarDisplay();
+    iniciarContagem();
+  </script>
+</body>
+</html>
