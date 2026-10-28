@@ -17,7 +17,8 @@ public class Main {
         }
 
         try {
-            ServidorWeb servidor = new ServidorWeb(porta, "web");
+            String pastaWeb = java.nio.file.Files.exists(java.nio.file.Paths.get("web")) ? "web" : ".";
+            ServidorWeb servidor = new ServidorWeb(porta, pastaWeb);
             servidor.iniciar();
 
             String url = "http://localhost:" + porta;

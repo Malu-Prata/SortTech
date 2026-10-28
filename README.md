@@ -88,23 +88,22 @@ SortTech/
 ├── README.md                    # Documentacao do projeto
 ├── run.sh                       # Script de execucao para Linux e macOS
 ├── run.bat                      # Script de execucao para Windows
-├── src/                         # Codigo-fonte do backend Java
-│   └── com/estudotempo/
-│       ├── Main.java            # Inicializacao do servidor e abertura automatica no navegador
-│       ├── model/
-│       │   ├── AreaComputacao.java   # Catalogo de areas e serializacao JSON nativa
-│       │   └── TemaEstudo.java       # Modelo de dados de cada tema
-│       ├── service/
-│       │   └── SorteadorService.java # Logica do sorteador com filtro anti-repeticao
-│       └── server/
-│           └── ServidorWeb.java      # Servidor HTTP nativo e manipuladores da API
-└── web/                         # Frontend Web da aplicacao
-    ├── index.html               # Pagina principal do SortTech
-    ├── timer.html               # Pagina dedicada do Timer de Estudos (Pomodoro 30 min)
-    ├── style.css                # Folha de estilos com a paleta oficial e fonte Forum
-    ├── app.js                   # Logica de interacao, sorteio, audio e confetes
-    ├── temas.js                 # Base de dados local com as 10 areas e 90 temas
-    └── temas.json               # Catalogo estruturado em formato JSON
+├── index.html                   # Pagina principal do SortTech
+├── timer.html                   # Pagina dedicada do Timer de Estudos (Pomodoro 30 min)
+├── style.css                    # Folha de estilos com a paleta oficial e fonte Forum
+├── app.js                       # Logica de interacao, sorteio, audio e confetes
+├── temas.js                     # Base de dados local com as 10 areas e 90 temas
+├── temas.json                   # Catalogo estruturado em formato JSON
+└── src/                         # Codigo-fonte do backend Java
+    └── com/estudotempo/
+        ├── Main.java            # Inicializacao do servidor e abertura automatica no navegador
+        ├── model/
+        │   ├── AreaComputacao.java   # Catalogo de areas e serializacao JSON nativa
+        │   └── TemaEstudo.java       # Modelo de dados de cada tema
+        ├── service/
+        │   └── SorteadorService.java # Logica do sorteador com filtro anti-repeticao
+        └── server/
+            └── ServidorWeb.java      # Servidor HTTP nativo e manipuladores da API
 ```
 
 ---
@@ -113,9 +112,9 @@ SortTech/
 
 ### Opção 1: Execução Direta no Navegador (Offline / GitHub Pages)
 
-Por contar com carregamento independente em JavaScript, basta abrir o arquivo [`web/index.html`](web/index.html) em qualquer navegador web moderno com dois cliques.
+Basta abrir o arquivo [`index.html`](index.html) em qualquer navegador web moderno com dois cliques.
 
-Também pode ser publicado diretamente em serviços de hospedagem estática, como **GitHub Pages**, **Vercel** ou **Netlify**, apontando para a pasta `web/`.
+No **GitHub Pages**, o site pode ser ativado diretamente apontando para a raiz (`/ (root)`) da branch `main`.
 
 ---
 
