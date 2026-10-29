@@ -1,1021 +1,1110 @@
 window.DADOS_AREAS = [
   {
-    "id": "web",
-    "nome": "Desenvolvimento Web e Mobile",
-    "descricao": "Frontend, Backend, APIs, Bancos de Dados e Frameworks modernos",
+    "id": "teoria-computacao",
+    "nome": "Teoria da Computação e Complexidade",
+    "descricao": "Autômatos, Máquinas de Turing, Decidibilidade, P vs NP e Teoria da Informação",
     "temas": [
       {
-        "id": "web-1",
-        "titulo": "APIs RESTful e GraphQL",
+        "id": "tc-1",
+        "titulo": "Autômatos Finitos e Linguagens Regulares",
+        "descricao": "Compreenda os modelos formais de computação de estados finitos (DFA e NFA), equivalência com Expressões Regulares e o Lema do Bombeamento.",
+        "nivel": "Iniciante",
         "topicosChave": [
-          "Verbos HTTP",
-          "JSON",
-          "Query e Mutation",
-          "Autenticação",
-          "Cache"
+          "DFA e NFA",
+          "Expressões Regulares",
+          "Lema do Bombeamento",
+          "Minimização de Estados",
+          "Hierarquia de Chomsky"
         ]
       },
       {
-        "id": "web-2",
-        "titulo": "Componentização e Gerenciamento de Estado",
+        "id": "tc-2",
+        "titulo": "Gramáticas Livres de Contexto e Autômatos com Pilha",
+        "descricao": "Estude como parsers de linguagens de programação funcionam na teoria através de gramáticas livres de contexto e autômatos com pilha (PDA).",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Hooks",
-          "Props",
-          "Context API / Redux",
-          "Re-renderização"
+          "Autômato com Pilha",
+          "Árvore de Derivação",
+          "Ambiguidade Gramatical",
+          "Forma Normal de Chomsky",
+          "Parsing Teórico"
         ]
       },
       {
-        "id": "web-3",
-        "titulo": "Autenticação e Autorização Web",
+        "id": "tc-3",
+        "titulo": "Máquinas de Turing e a Tese de Church-Turing",
+        "descricao": "Entenda o modelo formal de computador universal criado por Alan Turing, a fita infinita e os limites teóricos do que pode ser computado por qualquer algoritmo.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "JWT",
-          "OAuth 2.0",
-          "CORS",
-          "HttpOnly Cookies",
-          "RBAC"
+          "Máquina Universal de Turing",
+          "Tese de Church-Turing",
+          "Fita e Cabeçote de Leitura",
+          "Computabilidade",
+          "Reconhecedores de Linguagens"
         ]
       },
       {
-        "id": "web-4",
-        "titulo": "Otimização de Performance e Core Web Vitals",
+        "id": "tc-4",
+        "titulo": "Problema da Parada e Indecidibilidade",
+        "descricao": "Descubra por que é matematicamente impossível criar um algoritmo que preveja se qualquer outro código entrará em loop infinito (Halting Problem e Teorema de Rice).",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Core Web Vitals",
-          "Lazy Loading",
-          "Minificação",
-          "CDN",
-          "Lighthouse"
+          "Halting Problem",
+          "Teorema de Rice",
+          "Redução de Problemas",
+          "Incompletude de Gödel",
+          "Indecidibilidade"
         ]
       },
       {
-        "id": "web-5",
-        "titulo": "Bancos de Dados Relacionais e Não-Relacionais",
+        "id": "tc-5",
+        "titulo": "Classes P, NP e NP-Completude",
+        "descricao": "Explore o maior problema em aberto da computação: a diferença entre resolver um problema em tempo polinomial versus verificar uma solução candidata.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "PostgreSQL",
-          "MongoDB",
-          "Modelagem ER",
-          "Índices",
-          "ORMs"
+          "P versus NP",
+          "NP-Completo",
+          "Teorema de Cook-Levin",
+          "Reduções Polinomiais",
+          "Problema SAT"
         ]
       },
       {
-        "id": "web-6",
-        "titulo": "Progressive Web Apps e Service Workers",
+        "id": "tc-6",
+        "titulo": "Complexidade de Espaço e Hierarquia Polinomial",
+        "descricao": "Analise a quantidade de memória necessária para executar algoritmos nas classes de espaço L, NL, PSPACE e o Teorema de Savitch.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Manifest.json",
-          "Service Workers",
-          "Cache Storage",
-          "Push Notifications"
+          "PSPACE-Completo",
+          "Teorema de Savitch",
+          "Espaço Logarítmico (L)",
+          "Hierarquia Polinomial",
+          "Quantified Boolean Formulas"
         ]
       },
       {
-        "id": "web-7",
-        "titulo": "TypeScript no Desenvolvimento Moderno",
+        "id": "tc-7",
+        "titulo": "Teoria da Informação de Shannon",
+        "descricao": "Estude a fundamentação matemática da comunicação digital, o conceito de entropia da informação e os limites teóricos de compressão e capacidade de canal.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Generics",
-          "Interfaces vs Types",
-          "Strict Mode",
-          "Transpilação"
+          "Entropia de Shannon",
+          "Compressão sem Perdas",
+          "Codificação de Huffman",
+          "Capacidade de Canal",
+          "Redundância"
         ]
       },
       {
-        "id": "web-8",
-        "titulo": "Server-Side Rendering e Hydration",
+        "id": "tc-8",
+        "titulo": "Teoria da Computabilidade e Funções Recursivas",
+        "descricao": "Investigue o cálculo lambda de Church, funções primitivas recursivas, funções mu-recursivas e a equivalência formal com as Máquinas de Turing.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Next.js",
-          "Nuxt",
-          "SSR vs SSG",
-          "Hydration",
-          "Streaming HTML"
-        ]
-      },
-      {
-        "id": "web-9",
-        "titulo": "WebSockets e Comunicação Bidirecional",
-        "topicosChave": [
-          "Socket.IO",
-          "Event-Driven",
-          "SSE (Server-Sent Events)",
-          "Handshake"
-        ]
-      },
-      {
-        "id": "web-10",
-        "titulo": "Micro-Frontends e Arquitetura Modular",
-        "topicosChave": [
-          "Module Federation",
-          "Web Components",
-          "Isolamento de Estilos",
-          "Roteamento"
+          "Cálculo Lambda",
+          "Funções Mu-Recursivas",
+          "Numeração de Gödel",
+          "Equivalência de Modelos",
+          "Recursão"
         ]
       }
     ]
   },
   {
-    "id": "ia",
-    "nome": "Inteligência Artificial e Dados",
-    "descricao": "Machine Learning, Deep Learning, LLMs, NLP e Ciência de Dados",
+    "id": "algoritmos-fundamentais",
+    "nome": "Algoritmos e Estruturas de Dados Fundamentais",
+    "descricao": "Grafos, Otimização Combinatória, Árvores Balanceadas e Análise Assintótica",
     "temas": [
       {
-        "id": "ia-1",
-        "titulo": "Redes Neurais Artificiais e Deep Learning",
+        "id": "alg-1",
+        "titulo": "Algoritmos em Grafos e Fluxo Máximo",
+        "descricao": "Domine a resolução de problemas em redes e grafos através dos algoritmos de Dijkstra, Bellman-Ford, Floyd-Warshall e o Teorema do Fluxo Máximo e Corte Mínimo.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Gradiente Descendente",
-          "ReLU / Sigmoid",
-          "Camadas Ocultas",
-          "Loss Functions"
-        ]
-      },
-      {
-        "id": "ia-2",
-        "titulo": "Processamento de Linguagem Natural e LLMs",
-        "topicosChave": [
-          "Mecanismo de Atenção",
-          "Tokenização",
-          "Transformers",
-          "Fine-Tuning",
-          "Embeddings"
-        ]
-      },
-      {
-        "id": "ia-3",
-        "titulo": "Aprendizado Supervisionado vs Não Supervisionado",
-        "topicosChave": [
-          "Regressão Linear",
-          "K-Means",
-          "Random Forest",
-          "Overfitting vs Underfitting"
-        ]
-      },
-      {
-        "id": "ia-4",
-        "titulo": "Engenharia de Prompts e RAG (Retrieval-Augmented)",
-        "topicosChave": [
-          "Vector DBs",
-          "Cosine Similarity",
-          "System Prompts",
-          "Chunking"
-        ]
-      },
-      {
-        "id": "ia-5",
-        "titulo": "Análise Exploratória de Dados (EDA)",
-        "topicosChave": [
-          "Pandas / NumPy",
-          "Histogramas",
-          "Boxplots",
-          "Outliers",
-          "Limpeza de Dados"
-        ]
-      },
-      {
-        "id": "ia-6",
-        "titulo": "Visão Computacional e Redes Convolucionais (CNN)",
-        "topicosChave": [
-          "Convoluções",
-          "Pooling",
-          "YOLO / OpenCV",
-          "Data Augmentation"
-        ]
-      },
-      {
-        "id": "ia-7",
-        "titulo": "Métricas de Avaliação de Modelos",
-        "topicosChave": [
-          "Matriz de Confusão",
-          "F1-Score",
-          "Recall",
-          "ROC-AUC",
-          "Cross-Validation"
-        ]
-      },
-      {
-        "id": "ia-8",
-        "titulo": "MLOps e Versionamento de Modelos",
-        "topicosChave": [
-          "MLflow",
-          "DVC",
-          "Pipeline de Retreino",
-          "Model Registry",
-          "Feature Store"
-        ]
-      },
-      {
-        "id": "ia-9",
-        "titulo": "Modelos de Difusão e IA Generativa Visual",
-        "topicosChave": [
-          "Stable Diffusion",
-          "Latent Space",
-          "Denoising",
-          "LoRA",
-          "ControlNet"
-        ]
-      },
-      {
-        "id": "ia-10",
-        "titulo": "Aprendizado por Reforço (RL)",
-        "topicosChave": [
-          "Q-Learning",
-          "Reward Function",
-          "Policy Gradient",
-          "Ambientes Gym",
-          "Exploration vs Exploitation"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "seguranca",
-    "nome": "Cibersegurança e Redes",
-    "descricao": "Defesa, Pentest, Criptografia, OWASP, Protocolos e Identidade",
-    "temas": [
-      {
-        "id": "sec-1",
-        "titulo": "OWASP Top 10 e Vulnerabilidades Web",
-        "topicosChave": [
-          "SQLi",
-          "XSS",
-          "Sanitização de Inputs",
-          "CSRF Tokens",
-          "WAF"
-        ]
-      },
-      {
-        "id": "sec-2",
-        "titulo": "Criptografia Simétrica vs Assimétrica",
-        "topicosChave": [
-          "AES",
-          "RSA",
-          "Hashing",
-          "Salting",
-          "Assinatura Digital"
-        ]
-      },
-      {
-        "id": "sec-3",
-        "titulo": "Fundamentos do Modelo OSI e Pilha TCP/IP",
-        "topicosChave": [
-          "TCP 3-way Handshake",
-          "UDP",
-          "Sub-redes / CIDR",
-          "Portas e Sockets"
-        ]
-      },
-      {
-        "id": "sec-4",
-        "titulo": "Arquitetura Zero Trust e Gestão de Identidade (IAM)",
-        "topicosChave": [
-          "MFA",
-          "Princípio do Menor Privilégio",
-          "Segmentação de Rede",
-          "SSO"
-        ]
-      },
-      {
-        "id": "sec-5",
-        "titulo": "Análise de Pacotes e Tráfego com Wireshark",
-        "topicosChave": [
-          "Packet Sniffing",
-          "Filtros de Exibição",
-          "PCAP",
-          "Análise de Handshakes"
-        ]
-      },
-      {
-        "id": "sec-6",
-        "titulo": "Engenharia Social e Proteção Contra Phishing",
-        "topicosChave": [
-          "Spear Phishing",
-          "Spoofing",
-          "DMARC/SPF/DKIM",
-          "Conscientização"
-        ]
-      },
-      {
-        "id": "sec-7",
-        "titulo": "Segurança de APIs e Prevenção de Ataques DDoS",
-        "topicosChave": [
-          "Rate Limiting",
-          "API Gateway",
-          "DDoS Mitigation",
-          "Cloudflare / CDN"
-        ]
-      },
-      {
-        "id": "sec-8",
-        "titulo": "Metodologias de Teste de Intrusão (Pentest)",
-        "topicosChave": [
-          "Reconhecimento",
-          "Enumeração",
-          "Metasploit",
-          "Burp Suite",
-          "Relatório de Vulnerabilidades"
-        ]
-      },
-      {
-        "id": "sec-9",
-        "titulo": "Segurança de Contêineres e Imagens",
-        "topicosChave": [
-          "Docker Rootless",
-          "Scan com Trivy",
-          "Secrets em Build",
-          "AppArmor / Seccomp"
-        ]
-      },
-      {
-        "id": "sec-10",
-        "titulo": "Gestão de Chaves e Certificados TLS/SSL",
-        "topicosChave": [
-          "Let's Encrypt",
-          "PKI",
-          "Renovação Automática",
-          "Cipher Suites",
-          "HSTS"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "engenharia",
-    "nome": "Engenharia de Software e Algoritmos",
-    "descricao": "Padrões de Projeto, Clean Code, SOLID, Estruturas de Dados e Arquitetura",
-    "temas": [
-      {
-        "id": "eng-1",
-        "titulo": "Padrões de Projeto (Design Patterns - GoF)",
-        "topicosChave": [
-          "Strategy",
-          "Observer",
-          "Factory Method",
-          "Adapter",
-          "Singleton"
-        ]
-      },
-      {
-        "id": "eng-2",
-        "titulo": "Princípios SOLID e Código Limpo (Clean Code)",
-        "topicosChave": [
-          "Single Responsibility",
-          "Open/Closed",
-          "Liskov Substitution",
-          "Interface Segregation",
-          "Dependency Inversion"
-        ]
-      },
-      {
-        "id": "eng-3",
-        "titulo": "Estruturas de Dados Essenciais",
-        "topicosChave": [
-          "Hash Collisions",
-          "Árvore AVL",
-          "Grafos / Matriz de Adjacência",
-          "Heap"
-        ]
-      },
-      {
-        "id": "eng-4",
-        "titulo": "Complexidade de Tempo e Espaço (Notação Big-O)",
-        "topicosChave": [
-          "Big-O",
-          "Melhor / Pior Caso",
-          "Consumo de Memória",
-          "Análise Assintótica"
-        ]
-      },
-      {
-        "id": "eng-5",
-        "titulo": "Testes Automatizados e Metodologia TDD",
-        "topicosChave": [
-          "JUnit / Assertions",
-          "Mocks / Stubs",
-          "Pirâmide de Testes",
-          "Cobertura de Código"
-        ]
-      },
-      {
-        "id": "eng-6",
-        "titulo": "Arquitetura Limpa e Domain-Driven Design (DDD)",
-        "topicosChave": [
-          "Clean Architecture",
-          "Entidades vs DTOs",
-          "Inversão de Controle",
-          "Value Objects"
-        ]
-      },
-      {
-        "id": "eng-7",
-        "titulo": "Concorrência, Multithreading e Paralelismo",
-        "topicosChave": [
-          "Threads",
-          "Locks / Mutex",
-          "Deadlocks",
-          "Volatile",
-          "ThreadPoolExecutor"
-        ]
-      },
-      {
-        "id": "eng-8",
-        "titulo": "Algoritmos de Grafos e Caminho Mínimo",
-        "topicosChave": [
+          "Ford-Fulkerson",
+          "Edmonds-Karp",
           "Dijkstra",
-          "BFS e DFS",
-          "A* (A-Star)",
-          "Ciclos em Grafos",
-          "Árvore Geradora Mínima"
+          "Floyd-Warshall",
+          "Corte Mínimo"
         ]
       },
       {
-        "id": "eng-9",
-        "titulo": "Refatoração e Identificação de Code Smells",
+        "id": "alg-2",
+        "titulo": "Árvores Balanceadas e Indexação em Memória",
+        "descricao": "Compreenda a mecânica interna de rebalanceamento e rotações em Árvores AVL, Red-Black Trees, B-Trees e B+ Trees para buscas em tempo O(log n).",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Extração de Métodos",
-          "Duplicação",
-          "Classes Deus",
-          "Dívida Técnica",
-          "Linters"
+          "Rotações AVL",
+          "Árvores Red-Black",
+          "B-Trees",
+          "B+ Trees",
+          "Complexidade O(log n)"
         ]
       },
       {
-        "id": "eng-10",
-        "titulo": "Microsserviços vs Monólitos Modulares",
+        "id": "alg-3",
+        "titulo": "Programação Dinâmica e Subestrutura Ótima",
+        "descricao": "Aprenda a decompor problemas exponenciais em subproblemas sobrepostos com memoização e tabelamento (Problema da Mochila, Alinhamento de Sequências).",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Event-Driven",
-          "Saga Pattern",
-          "Mensageria",
-          "Bancos Independentes",
-          "Service Discovery"
+          "Subestrutura Ótima",
+          "Memoização",
+          "Tabelamento",
+          "Problema da Mochila",
+          "Distância de Levenshtein"
+        ]
+      },
+      {
+        "id": "alg-4",
+        "titulo": "Estruturas de Dados Probabilísticas",
+        "descricao": "Estude estruturas que trocam precisão absoluta por economia brutal de memória em sistemas de escala: Filtros de Bloom, HyperLogLog e Count-Min Sketch.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Filtro de Bloom",
+          "HyperLogLog",
+          "Count-Min Sketch",
+          "Hashing Múltiplo",
+          "Taxa de Falsos Positivos"
+        ]
+      },
+      {
+        "id": "alg-5",
+        "titulo": "Análise Assintótica e Análise Amortizada",
+        "descricao": "Vá além do Big-O tradicional e aprenda métodos contábeis, método do potencial e o Teorema Mestre para calcular custos reais de algoritmos ao longo do tempo.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Notação Big-O",
+          "Teorema Mestre",
+          "Método do Potencial",
+          "Custo Amortizado",
+          "Pior vs Melhor Caso"
+        ]
+      },
+      {
+        "id": "alg-6",
+        "titulo": "Divisão e Conquista e Transformada Rápida de Fourier (FFT)",
+        "descricao": "Entenda como quebrar problemas em metades reduz drasticamente a complexidade temporal, incluindo a multiplicação polinomial e processamento de sinais com FFT.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Algoritmo FFT",
+          "Multiplicação de Karatsuba",
+          "Mediana das Medianas",
+          "Recursão",
+          "Complexidade O(n log n)"
+        ]
+      },
+      {
+        "id": "alg-7",
+        "titulo": "Algoritmos Gulosos e Teoria de Matróides",
+        "descricao": "Descubra a estrutura matemática que prova quando uma escolha gulosa local resulta na solução global ótima através da teoria de matróides e árvores geradoras.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Matróides",
+          "Árvore Geradora Mínima",
+          "Algoritmo de Kruskal",
+          "Algoritmo de Prim",
+          "Escolha Gulosa"
+        ]
+      },
+      {
+        "id": "alg-8",
+        "titulo": "Algoritmos Aproximativos e Heurísticas para Problemas NP-Difíceis",
+        "descricao": "Como a ciência da computação lida com problemas intratáveis: aproximações com garantia de razão matemática (Vertex Cover, Caixeiro-Viajante Métrico).",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Razão de Aproximação",
+          "Vertex Cover",
+          "TSP Métrico",
+          "PTAS",
+          "Heurísticas"
         ]
       }
     ]
   },
   {
-    "id": "devops",
-    "nome": "DevOps e Cloud Computing",
-    "descricao": "Containers, Kubernetes, CI/CD, Terraform, Nuvem e Observabilidade",
+    "id": "compiladores-linguagens",
+    "nome": "Compiladores e Teoria de Linguagens",
+    "descricao": "Análise Léxica, AST, Teoria dos Tipos, SSA, Bytecode e Garbage Collection",
     "temas": [
       {
-        "id": "ops-1",
-        "titulo": "Conteinerização com Docker",
+        "id": "comp-1",
+        "titulo": "Análise Léxica e Tabelas de Símbolos",
+        "descricao": "Como o compilador transforma sequências de caracteres de código-fonte em um fluxo de tokens estruturados utilizando autômatos finitos determinísticos.",
+        "nivel": "Iniciante",
         "topicosChave": [
-          "Dockerfile",
-          "Docker Compose",
-          "Volumes",
-          "Networks",
-          "Multi-stage"
+          "Scanners e Tokenização",
+          "Tabela de Símbolos",
+          "DFA para Identificadores",
+          "Lexer",
+          "Tratamento de Whitespace"
         ]
       },
       {
-        "id": "ops-2",
-        "titulo": "Orquestração com Kubernetes (K8s)",
+        "id": "comp-2",
+        "titulo": "Parsing e Árvore Sintática Abstrata (AST)",
+        "descricao": "Estude a construção da árvore estrutural de código (AST) usando parsers descendentes recursivos (LL) e ascendentes guiados por tabela (LR/LALR).",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Pods",
-          "Deployments",
-          "Services e Ingress",
-          "ConfigMaps",
-          "HPA"
+          "Árvore Sintática Abstrata",
+          "Recursive Descent",
+          "Parsers LR e LALR",
+          "Shift-Reduce",
+          "Gramáticas Sem Ambiguidade"
         ]
       },
       {
-        "id": "ops-3",
-        "titulo": "Pipelines de CI/CD Automatizadas",
+        "id": "comp-3",
+        "titulo": "Teoria dos Tipos e Sistema de Tipagem Hindley-Milner",
+        "descricao": "Compreenda a fundamentação matemática que permite a linguagens como Rust, Haskell e TypeScript inferirem tipos estáticos sem anotações explícitas.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "GitHub Actions",
-          "Build Automation",
-          "Artifacts",
-          "Secrets Management"
+          "Algoritmo W",
+          "Inferência de Tipos",
+          "Unificação de Termos",
+          "Subtipagem",
+          "Tipos Paramétricos"
         ]
       },
       {
-        "id": "ops-4",
-        "titulo": "Infraestrutura como Código (IaC) com Terraform",
+        "id": "comp-4",
+        "titulo": "Representação Intermediária e SSA (Static Single Assignment)",
+        "descricao": "Descubra a forma interna na qual compiladores modernos (como LLVM e GCC) representam o código para viabilizar otimizações profundas antes do código de máquina.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "HCL",
-          "Terraform Plan/Apply",
-          "State File",
-          "Módulos"
+          "SSA Form",
+          "Funções Phi",
+          "Control Flow Graph (CFG)",
+          "Three-Address Code",
+          "LLVM IR"
         ]
       },
       {
-        "id": "ops-5",
-        "titulo": "Observabilidade: Métricas, Logs e Rastreamento",
+        "id": "comp-5",
+        "titulo": "Otimizações Clássicas de Compilador",
+        "descricao": "Explore técnicas como eliminação de código morto, desenrolamento de laços (loop unrolling), propagação de constantes e inlining de funções.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Prometheus",
-          "Grafana",
-          "Structured Logging",
-          "Tracing Distribuído"
+          "Dead Code Elimination",
+          "Constant Folding",
+          "Loop Unrolling",
+          "Inlining",
+          "Common Subexpression"
         ]
       },
       {
-        "id": "ops-6",
-        "titulo": "Estratégias de Deploy Modernas",
+        "id": "comp-6",
+        "titulo": "Gerenciamento Automático de Memória (Garbage Collection)",
+        "descricao": "Analise a teoria e o funcionamento dos algoritmos de coleta de lixo: Mark & Sweep, Contagem de Referências, Coletores Geracionais e Stop-The-World.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Blue-Green",
-          "Canary",
-          "Feature Flags",
-          "Zero-downtime Rollback"
+          "Mark and Sweep",
+          "Contagem de Referências",
+          "Hipótese Fraca Geracional",
+          "Compactação de Heap",
+          "Barreiras de Escrita"
         ]
       },
       {
-        "id": "ops-7",
-        "titulo": "Fundamentos de Arquitetura em Nuvem (AWS/GCP)",
+        "id": "comp-7",
+        "titulo": "Máquinas Virtuais e Interpretadores de Bytecode",
+        "descricao": "Entenda a diferença entre máquinas virtuais baseadas em pilha (Stack-based, ex: JVM) versus registradores (Register-based, ex: LuaJIT) e seus laços de despacho.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Compute Instances",
-          "Object Storage",
-          "Serverless",
-          "VPC e Subnets"
+          "Stack-based VM",
+          "Register-based VM",
+          "Bytecode Dispatch",
+          "Frame de Pilha",
+          "Instruction Pointer"
         ]
       },
       {
-        "id": "ops-8",
-        "titulo": "Servidores Web Reversos e Load Balancing",
+        "id": "comp-8",
+        "titulo": "Compilação Just-in-Time (JIT)",
+        "descricao": "Investigue como sistemas modernos compilam código dinamicamente para código nativo em tempo de execução através de contadores de perfil (Profiling) e desotimização.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Nginx",
-          "Caddy",
-          "Algoritmos de Round-Robin",
-          "Proxy Pass",
-          "Terminação SSL"
-        ]
-      },
-      {
-        "id": "ops-9",
-        "titulo": "GitOps e Entrega Declarativa",
-        "topicosChave": [
-          "ArgoCD",
-          "Flux",
-          "Repositório como Fonte da Verdade",
-          "Sincronização de Estado"
-        ]
-      },
-      {
-        "id": "ops-10",
-        "titulo": "Engenharia de Confiabilidade (SRE)",
-        "topicosChave": [
-          "SLO e SLA",
-          "Error Budgets",
-          "Post-mortem sem Culpa",
-          "Runbooks",
-          "Alerting"
+          "Tracing JIT",
+          "HotSpot JVM",
+          "Perfilamento em Tempo Real",
+          "Desotimização",
+          "Deoptimization Bailout"
         ]
       }
     ]
   },
   {
-    "id": "games",
-    "nome": "Desenvolvimento de Jogos",
-    "descricao": "Motores de Jogos, Gráficos 3D, Shaders, Física e Gameplay",
+    "id": "arquitetura-hardware",
+    "nome": "Arquitetura de Computadores e Hardware",
+    "descricao": "Hierarquia de Memória, Caches, Pipelining, Branch Prediction e Conjunto de Instruções",
     "temas": [
       {
-        "id": "game-1",
-        "titulo": "Game Loop, Delta Time e Física em Jogos",
-        "topicosChave": [
-          "Game Loop",
-          "Delta Time",
-          "Colisões AABB",
-          "Gravidade",
-          "Rigidbody"
-        ]
-      },
-      {
-        "id": "game-2",
-        "titulo": "Shaders e Pipeline Gráfico",
-        "topicosChave": [
-          "Vertex Shader",
-          "Fragment Shader",
-          "GLSL / HLSL",
-          "Iluminação Blinn-Phong",
-          "PBR"
-        ]
-      },
-      {
-        "id": "game-3",
-        "titulo": "Arquitetura ECS (Entity Component System)",
-        "topicosChave": [
-          "Entities",
-          "Components",
-          "Systems",
-          "Data-Oriented Design",
-          "Performance de Cache"
-        ]
-      },
-      {
-        "id": "game-4",
-        "titulo": "Inteligência Artificial para NPCs e Inimigos",
-        "topicosChave": [
-          "Finite State Machines",
-          "Behavior Trees",
-          "NavMesh e Pathfinding",
-          "Linha de Visão"
-        ]
-      },
-      {
-        "id": "game-5",
-        "titulo": "Otimização Gráfica e Level of Detail (LOD)",
-        "topicosChave": [
-          "Draw Calls",
-          "Occlusion Culling",
-          "LOD",
-          "Texture Atlases",
-          "Profilers"
-        ]
-      },
-      {
-        "id": "game-6",
-        "titulo": "Multiplayer e Sincronização em Tempo Real",
-        "topicosChave": [
-          "Client-Side Prediction",
-          "Server Reconciliation",
-          "Lag Compensation",
-          "Sockets"
-        ]
-      },
-      {
-        "id": "game-7",
-        "titulo": "Áudio Espacial e Sistemas de Som Interativos",
-        "topicosChave": [
-          "Áudio Posicional 3D",
-          "FMOD",
-          "Transições Dinâmicas",
-          "Atenuação de Distância"
-        ]
-      },
-      {
-        "id": "game-8",
-        "titulo": "Animação Esquelética e Cinemática Inversa (IK)",
-        "topicosChave": [
-          "Rigging",
-          "Skinning",
-          "Inverse Kinematics",
-          "Blend Trees",
-          "Root Motion"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "dados",
-    "nome": "Engenharia de Dados",
-    "descricao": "Pipelines de ETL, Big Data, Data Lakes, Kafka e Processamento Distribuído",
-    "temas": [
-      {
-        "id": "data-1",
-        "titulo": "Pipelines de ETL/ELT com Apache Airflow",
-        "topicosChave": [
-          "DAGs",
-          "Operadores",
-          "Sensores",
-          "Agendamento",
-          "Monitoramento de Falhas"
-        ]
-      },
-      {
-        "id": "data-2",
-        "titulo": "Processamento de Fluxos em Tempo Real com Apache Kafka",
-        "topicosChave": [
-          "Tópicos e Partições",
-          "Producers e Consumers",
-          "Consumer Groups",
-          "Kafka Streams",
-          "Offset"
-        ]
-      },
-      {
-        "id": "data-3",
-        "titulo": "Computação Distribuída com Apache Spark",
-        "topicosChave": [
-          "RDDs",
-          "DataFrames",
-          "Spark SQL",
-          "Lazy Evaluation",
-          "Particionamento em Memória"
-        ]
-      },
-      {
-        "id": "data-4",
-        "titulo": "Arquitetura Data Lakehouse e Formatos Abertos",
-        "topicosChave": [
-          "Delta Lake",
-          "Apache Iceberg",
-          "Parquet",
-          "Transações ACID",
-          "Time Travel"
-        ]
-      },
-      {
-        "id": "data-5",
-        "titulo": "Modelagem Dimensional e Data Warehouses",
-        "topicosChave": [
-          "Star Schema",
-          "Snowflake Schema",
-          "Tabelas Fato e Dimensão",
-          "Slowly Changing Dimensions"
-        ]
-      },
-      {
-        "id": "data-6",
-        "titulo": "Transformação e Testes de Dados com dbt",
-        "topicosChave": [
-          "dbt Models",
-          "Jinja e Macros",
-          "Testes de Schema",
-          "Documentação Automatizada",
-          "Lineage"
-        ]
-      },
-      {
-        "id": "data-7",
-        "titulo": "Bancos de Dados NoSQL Colunares e de Grafos",
-        "topicosChave": [
-          "Cassandra",
-          "Neo4j",
-          "Cypher",
-          "Escalabilidade Horizontal",
-          "Consistência Eventual"
-        ]
-      },
-      {
-        "id": "data-8",
-        "titulo": "Governança e Catálogo de Metadados",
-        "topicosChave": [
-          "Linhagem de Dados",
-          "Data Catalog",
-          "LGPD / GDPR",
-          "Qualidade de Dados",
-          "Great Expectations"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "baixo-nivel",
-    "nome": "Sistemas de Baixo Nível",
-    "descricao": "Compiladores, Gerenciamento de Memória, Kernel, Rust, C e Assembly",
-    "temas": [
-      {
-        "id": "low-1",
-        "titulo": "Gerenciamento Manual de Memória e Ponteiros em C",
-        "topicosChave": [
-          "Malloc e Free",
-          "Stack vs Heap",
-          "Ponteiros e Aritmética",
-          "Memory Leaks",
-          "Valgrind"
-        ]
-      },
-      {
-        "id": "low-2",
-        "titulo": "Rust: Sistema de Posse e Empréstimo (Ownership)",
-        "topicosChave": [
-          "Ownership",
-          "Borrowing",
-          "Lifetimes",
-          "Zero-Cost Abstractions",
-          "Sem Garbage Collector"
-        ]
-      },
-      {
-        "id": "low-3",
-        "titulo": "Construção de Compiladores e Interpretadores",
-        "topicosChave": [
-          "Análise Léxica (Lexer)",
-          "Análise Sintática (Parser)",
-          "AST",
-          "Geração de Bytecode",
-          "LLVM"
-        ]
-      },
-      {
-        "id": "low-4",
-        "titulo": "Arquitetura de Computadores e Assembly x86/ARM",
-        "topicosChave": [
-          "Registradores",
-          "Instruções de Pulo",
-          "Chamada de Funções",
-          "Endereçamento",
-          "Pipeline de CPU"
-        ]
-      },
-      {
-        "id": "low-5",
-        "titulo": "Chamadas de Sistema (Syscalls) e Kernel Linux",
-        "topicosChave": [
-          "User Space vs Kernel Space",
-          "Syscalls",
-          "Processos e Forks",
-          "Sinais do SO",
-          "File Descriptors"
-        ]
-      },
-      {
-        "id": "low-6",
-        "titulo": "WebAssembly (Wasm) e Execução de Baixo Nível",
-        "topicosChave": [
-          "Compilação para Wasm",
-          "Linear Memory",
-          "Interoperabilidade JS",
-          "Wasmtime",
-          "WASI"
-        ]
-      },
-      {
-        "id": "low-7",
-        "titulo": "Estruturas de Dados Lock-Free e Primitivas Atômicas",
-        "topicosChave": [
-          "Compare-and-Swap (CAS)",
-          "Atomic Operations",
-          "Memory Barriers",
-          "Spinlocks",
-          "Sem Deadlocks"
-        ]
-      },
-      {
-        "id": "low-8",
-        "titulo": "Localidade de Cache e Otimização para Hardware",
+        "id": "arq-1",
+        "titulo": "Hierarquia de Memória e Coerência de Cache",
+        "descricao": "Aprenda como a distância física da memória impacta o desempenho: Caches L1/L2/L3, Linhas de Cache de 64 bytes, Protocolo MESI e False Sharing.",
+        "nivel": "Intermediário",
         "topicosChave": [
           "Cache L1/L2/L3",
-          "Cache Misses",
-          "Acesso Sequencial",
-          "Alinhamento de Memória",
-          "SIMD"
+          "Protocolo MESI",
+          "False Sharing",
+          "Linha de Cache",
+          "Localidade Espacial e Temporal"
+        ]
+      },
+      {
+        "id": "arq-2",
+        "titulo": "Pipelining de Instruções e Conflitos (Hazards)",
+        "descricao": "Entenda como o processador executa múltiplas instruções em estágios paralelos simultâneos e lida com conflitos estruturais, de dados e de controle.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Estágios do Pipeline",
+          "Hazards de Dados",
+          "Forwarding / Bypassing",
+          "Pipeline Stalls (Bolhas)",
+          "Hazards Estruturais"
+        ]
+      },
+      {
+        "id": "arq-3",
+        "titulo": "Previsão de Desvios e Execução Especulativa",
+        "descricao": "Como a CPU adivinha o resultado de ifs antes de calculá-los para não parar o pipeline, e como isso abriu portas para falhas como Spectre e Meltdown.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Branch Predictor",
+          "Execução Especulativa",
+          "Out-of-Order Execution",
+          "Branch Target Buffer",
+          "Vulnerabilidade Spectre"
+        ]
+      },
+      {
+        "id": "arq-4",
+        "titulo": "Memória Virtual, Paginação e TLB",
+        "descricao": "Descubra como o hardware e o sistema operacional criam a ilusão de memória contínua e protegida para cada processo através de tabelas de páginas e TLB.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Tabela de Páginas",
+          "Translation Lookaside Buffer (TLB)",
+          "Page Fault",
+          "Endereçamento Virtual",
+          "MMU"
+        ]
+      },
+      {
+        "id": "arq-5",
+        "titulo": "Arquiteturas RISC vs CISC e Conjunto de Instruções",
+        "descricao": "Compare a filosofia de instruções reduzidas (ARM, RISC-V) com instruções complexas (x86-64), analisando registradores, decodificação e micro-operações.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "RISC vs CISC",
+          "Micro-operações (uOps)",
+          "Registradores Gerais",
+          "Instruções x86 vs ARM",
+          "ISA"
+        ]
+      },
+      {
+        "id": "arq-6",
+        "titulo": "Paralelismo SIMD e Processamento Vetorial",
+        "descricao": "Compreenda o processamento Single Instruction, Multiple Data (AVX, NEON) que permite processar múltiplos números em um único ciclo de clock.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Instruções SIMD",
+          "Registradores Vetoriais",
+          "AVX-512",
+          "Vetorização Automática",
+          "Operações Paralelas"
+        ]
+      },
+      {
+        "id": "arq-7",
+        "titulo": "Acesso Direto à Memória (DMA) e Interrupções",
+        "descricao": "Entenda como placas de rede e discos transferem gigabytes de dados diretamente para a RAM sem sobrecarregar a CPU usando canais DMA e IRQs.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Direct Memory Access (DMA)",
+          "Linhas de Interrupção (IRQ)",
+          "Controlador de DMA",
+          "Memory Mapping",
+          "I/O Polling"
+        ]
+      },
+      {
+        "id": "arq-8",
+        "titulo": "Aritmética Computacional e Ponto Flutuante (IEEE 754)",
+        "descricao": "Por que 0.1 + 0.2 != 0.3? Estude a representação binária de números reais: sinal, expoente com viés, mantissa, NaN, subnormais e arredondamentos.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Padrão IEEE 754",
+          "Mantissa e Expoente",
+          "Complemento de Dois",
+          "Erros de Arredondamento",
+          "Números Subnormais"
         ]
       }
     ]
   },
   {
-    "id": "qa",
-    "nome": "Qualidade e Testes de Software",
-    "descricao": "Automação E2E, Testes de Performance, Pirâmide de Testes e BDD",
+    "id": "sistemas-operacionais",
+    "nome": "Sistemas Operacionais e Concorrência em Baixo Nível",
+    "descricao": "Kernel, Syscalls, Escalonamento, Memory Barriers, Primitivas Lock-Free e Inodes",
     "temas": [
       {
-        "id": "qa-1",
-        "titulo": "Automação de Testes End-to-End com Playwright",
+        "id": "so-1",
+        "titulo": "Chamadas de Sistema (Syscalls) e Níveis de Privilégio",
+        "descricao": "Como a transição entre Modo Usuário (Ring 3) e Modo Kernel (Ring 0) protege a integridade da máquina durante operações de disco e rede.",
+        "nivel": "Iniciante",
         "topicosChave": [
-          "Localizadores Resilientes",
-          "Auto-Wait",
-          "Gravação de Sessão",
-          "Testes Cross-Browser",
-          "CI/CD"
+          "Ring 0 e Ring 3",
+          "Instrução SYSCALL",
+          "Troca de Modo",
+          "Tratador de Interrupções",
+          "Segurança do Kernel"
         ]
       },
       {
-        "id": "qa-2",
-        "titulo": "Testes de Carga e Estresse com k6",
+        "id": "so-2",
+        "titulo": "Escalonamento de Processos e Troca de Contexto",
+        "descricao": "Investigue o escalonador do Linux (Completely Fair Scheduler - CFS), árvores Red-Black de tarefas e o custo computacional de um Context Switch.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Virtual Users (VUs)",
-          "Thresholds de Latência",
-          "Cenários de Pico",
-          "Métricas Percentis",
-          "Grafana k6"
+          "Completely Fair Scheduler (CFS)",
+          "Troca de Contexto",
+          "PCB (Process Control Block)",
+          "Inversão de Prioridade",
+          "Quantum de Tempo"
         ]
       },
       {
-        "id": "qa-3",
-        "titulo": "Testes de Contrato para Microsserviços com Pact",
+        "id": "so-3",
+        "titulo": "Primitivas Atômicas e Algoritmos Lock-Free",
+        "descricao": "Aprenda a sincronizar threads sem travas usando instruções atômicas de hardware como Compare-and-Swap (CAS), Fetch-and-Add e Filas Lock-Free.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Consumer-Driven Contracts",
-          "Pact Broker",
-          "Evolução de APIs",
-          "Evitar Quebras em Produção"
+          "Compare-and-Swap (CAS)",
+          "Lock-Free Data Structures",
+          "Problema ABA",
+          "Spinlocks",
+          "Operações Atômicas"
         ]
       },
       {
-        "id": "qa-4",
-        "titulo": "Testes de Mutação e Cobertura Efetiva",
+        "id": "so-4",
+        "titulo": "Modelo de Memória e Barreiras de Memória (Memory Barriers)",
+        "descricao": "Por que a CPU e o compilador podem reordenar suas linhas de código e como instruções de barreira (Memory Fences) garantem a ordem de execução.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Pitest / Stryker",
-          "Mutantes Sobreviventes",
-          "Além do Code Coverage",
-          "Qualidade dos Assertions"
+          "Memory Fences / Barriers",
+          "Reordenação de Instruções",
+          "Consistência Sequencial",
+          "Visibilidade de Memória",
+          "Volatile"
         ]
       },
       {
-        "id": "qa-5",
-        "titulo": "Desenvolvimento Guiado por Comportamento (BDD)",
+        "id": "so-5",
+        "titulo": "Deadlocks e as Condições de Coffman",
+        "descricao": "Estude a teoria formal de travamento mútuo entre processos concorrentes, as 4 condições necessárias de Coffman e o Algoritmo do Banqueiro de Dijkstra.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Linguagem Gherkin",
-          "Given-When-Then",
-          "Cucumber",
-          "Especificações Executáveis"
+          "Condições de Coffman",
+          "Algoritmo do Banqueiro",
+          "Grafo de Alocação de Recursos",
+          "Prevenção de Deadlock",
+          "Espera Circular"
         ]
       },
       {
-        "id": "qa-6",
-        "titulo": "Estratégias de Testes em Pirâmide e Shift-Left",
+        "id": "so-6",
+        "titulo": "Estrutura de Sistemas de Arquivos e Inodes",
+        "descricao": "Como o disco organiza arquivos: blocos de dados, tabelas de inodes, ponteiros diretos/indiretos, links simbólicos vs hard links e journaling.",
+        "nivel": "Iniciante",
         "topicosChave": [
-          "Pirâmide de Testes",
-          "Shift-Left Testing",
-          "Testes de Integração",
-          "Feedback Rápido"
+          "Inodes",
+          "Superblock",
+          "Hard Links e Soft Links",
+          "Journaling",
+          "Fragmentação"
         ]
       },
       {
-        "id": "qa-7",
-        "titulo": "Testes de Regressão Visual Automatizados",
+        "id": "so-7",
+        "titulo": "Comunicação Interprocessos (IPC) e Memória Compartilhada",
+        "descricao": "Analise os mecanismos de comunicação entre processos independentes: Pipes anônimos, Sockets de Domínio Unix, Message Queues e Memória Compartilhada.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Diff de Pixels",
-          "Snapshots",
-          "Componentes Visuais",
-          "Percy / Applitools",
-          "Responsividade"
+          "Memória Compartilhada",
+          "Unix Domain Sockets",
+          "Pipes e FIFOs",
+          "Semáforos de IPC",
+          "Troca de Mensagens"
         ]
       },
       {
-        "id": "qa-8",
-        "titulo": "Mocking e Ambientes de Teste Efêmeros",
+        "id": "so-8",
+        "titulo": "Isolamento de Processos: Namespaces e Cgroups",
+        "descricao": "Compreenda a mágica que torna os contêineres possíveis sem máquinas virtuais: Namespaces (PID, Mount, Net) e Grupos de Controle (cgroups) no Kernel Linux.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Testcontainers",
-          "WireMock",
-          "Bancos de Teste Descartáveis",
-          "Isolamento de Estado"
+          "Linux Namespaces",
+          "Control Groups (cgroups)",
+          "Chroot e Pivot Root",
+          "Isolamento de Recursos",
+          "Kernel Virtualization"
         ]
       }
     ]
   },
   {
-    "id": "design",
-    "nome": "Design de Interface e Acessibilidade",
-    "descricao": "UI/UX, Design Systems, Tokens de Design, WCAG e Experiência do Usuário",
+    "id": "sistemas-distribuidos",
+    "nome": "Sistemas Distribuídos e Teoria do Consenso",
+    "descricao": "Teorema CAP, Raft, Relógios Lógicos de Lamport, 2PC e Hashing Consistente",
     "temas": [
       {
-        "id": "des-1",
-        "titulo": "Design Systems e Tokens de Design",
+        "id": "dist-1",
+        "titulo": "Teorema CAP e Teorema PACELC",
+        "descricao": "A prova matemática de Eric Brewer de que nenhum sistema distribuído pode garantir simultaneamente Consistência, Disponibilidade e Tolerância a Partições.",
+        "nivel": "Iniciante",
         "topicosChave": [
-          "Figma Tokens",
-          "Consistência Visual",
-          "Componentes Reutilizáveis",
-          "Documentação Storybook"
+          "Teorema CAP",
+          "Teorema PACELC",
+          "Particionamento de Rede",
+          "Consistência Estrita",
+          "Alta Disponibilidade"
         ]
       },
       {
-        "id": "des-2",
-        "titulo": "Diretrizes de Acessibilidade Web (WCAG 2.2)",
+        "id": "dist-2",
+        "titulo": "Algoritmos de Consenso: Raft e Paxos",
+        "descricao": "Como um grupo de computadores independentes concorda sobre uma verdade comum mesmo quando nós caem: Eleição de Líder, Quóruns e Replicação de Log.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Contraste de Cores",
-          "Navegação por Teclado",
-          "Leitores de Tela",
-          "Atributos ARIA",
-          "Foco Visível"
+          "Protocolo Raft",
+          "Paxos",
+          "Eleição de Líder",
+          "Termos e Quóruns",
+          "Replicação de Log"
         ]
       },
       {
-        "id": "des-3",
-        "titulo": "Hierarquia Visual, Espaçamento e Tipografia",
+        "id": "dist-3",
+        "titulo": "Relógios Lógicos e Ordenação de Eventos (Lamport)",
+        "descricao": "Por que não podemos confiar no relógio de parede dos servidores e como a relação aconteceu-antes (happened-before) e Vector Clocks resolvem a causalidade.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Escalas Modulares",
-          "Grid de 8pt",
-          "Ritmo Vertical",
-          "Pesos Tipográficos",
-          "Escaneabilidade"
+          "Relógios de Lamport",
+          "Vector Clocks",
+          "Relação Happened-Before",
+          "Causalidade",
+          "Skew de Relógio"
         ]
       },
       {
-        "id": "des-4",
-        "titulo": "Microinterações e Animações com Propósito",
+        "id": "dist-4",
+        "titulo": "Transações Distribuídas e Two-Phase Commit (2PC)",
+        "descricao": "Estude o protocolo de confirmação em duas fases (Prepare e Commit) para transações atômicas distribuídas e por que ele bloqueia sob partições de rede.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Feedback Tátil/Visual",
-          "Timing Functions (Bezier)",
-          "Estados de Loading",
-          "Motion Design"
+          "Two-Phase Commit (2PC)",
+          "Coordenador e Participantes",
+          "Saga Pattern",
+          "Atomicidade Distribuída",
+          "Bloqueio de Nós"
         ]
       },
       {
-        "id": "des-5",
-        "titulo": "Pesquisa com Usuários e Mapeamento de Jornada",
+        "id": "dist-5",
+        "titulo": "Tolerância a Falhas Bizantinas (BFT)",
+        "descricao": "Como atingir consenso quando membros da rede não apenas falham, mas podem ser maliciosos e enviar informações falsas de propósito.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "User Journey Map",
-          "Personas",
-          "Testes de Usabilidade",
-          "Mapas de Calor (Heatmaps)",
-          "Heurísticas de Nielsen"
+          "Problema dos Generais Bizantinos",
+          "PBFT",
+          "Ataque Sybil",
+          "Quórum de 2f+1",
+          "Consenso Descentralizado"
         ]
       },
       {
-        "id": "des-6",
-        "titulo": "Arquitetura de Informação e Fluxos de Navegação",
+        "id": "dist-6",
+        "titulo": "Modelos de Consistência e Linearizabilidade",
+        "descricao": "Diferencie formalmente Linearizabilidade (consistência forte), Consistência Sequencial, Consistência Causal e Consistência Eventual.",
+        "nivel": "Avançado",
         "topicosChave": [
-          "Card Sorting",
-          "Wireframes",
-          "Árvore de Decisão",
-          "Redução de Carga Cognitiva"
+          "Linearizabilidade",
+          "Consistência Sequencial",
+          "Consistência Causal",
+          "Consistência Eventual",
+          "Read-After-Write"
         ]
       },
       {
-        "id": "des-7",
-        "titulo": "Design Responsivo e Estratégia Mobile-First",
+        "id": "dist-7",
+        "titulo": "Hashing Consistente e Distribuição de Chaves",
+        "descricao": "O algoritmo que permite adicionar ou remover nós em um cluster distribuído minimizando a movimentação de dados através de um anel virtual de hash.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Breakpoints Fluidos",
-          "Áreas de Toque (Touch Targets)",
-          "Imagens Responsivas",
-          "Densidade de Pixels"
+          "Consistent Hashing",
+          "Anel de Hash",
+          "Nós Virtuais",
+          "Sharding de Dados",
+          "Balanceamento de Carga"
         ]
       },
       {
-        "id": "des-8",
-        "titulo": "Acessibilidade para Daltonismo e Baixa Visão",
+        "id": "dist-8",
+        "titulo": "Detecção de Falhas e Protocolos Gossip",
+        "descricao": "Como milhares de servidores descobrem quem caiu sem um ponto central de falha usando difusão epidêmica e heartbeats probabilísticos.",
+        "nivel": "Intermediário",
         "topicosChave": [
-          "Simuladores de Daltonismo",
-          "Não Depender Apenas de Cor",
-          "Textos Alternativos (Alt)",
-          "Zoom sem Quebra"
+          "Protocolo Gossip",
+          "Phi Accrual Failure Detector",
+          "Disseminação Epidêmica",
+          "Heartbeats",
+          "Tolerância a Partições"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fundamentos-ia",
+    "nome": "Fundamentos Matemáticos da IA",
+    "descricao": "Álgebra Linear, Otimização Convexa, Backpropagation, Probabilidade e Transformers",
+    "temas": [
+      {
+        "id": "mat-1",
+        "titulo": "Álgebra Linear: Decomposição em Valores Singulares (SVD)",
+        "descricao": "Compreenda a matemática por trás da redução de dimensionalidade, autovalores, autovetores e a decomposição matricial usada em compressão e embeddings.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Decomposição SVD",
+          "Autovalores e Autovetores",
+          "Projeção Ortogonal",
+          "Redução de Dimensionalidade (PCA)",
+          "Matrizes Positivas-Definidas"
+        ]
+      },
+      {
+        "id": "mat-2",
+        "titulo": "Cálculo Multivariável: Jacobiana e Matriz Hessiana",
+        "descricao": "Estude como derivadas parciais multidimensionais formam o gradiente, a curvatura representada pela matriz Hessiana e os métodos de Newton para otimização.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Matriz Jacobiana",
+          "Matriz Hessiana",
+          "Gradiente Multivariado",
+          "Pontos de Sela",
+          "Curvatura e Condicionamento"
+        ]
+      },
+      {
+        "id": "mat-3",
+        "titulo": "Inferência Bayesiana e Estimativa de Máxima Verossimilhança (MLE)",
+        "descricao": "Aprenda os princípios probabilísticos para ajuste de parâmetros de modelos estatísticos através do Teorema de Bayes e da função de verossimilhança.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Teorema de Bayes",
+          "Maximum Likelihood Estimation (MLE)",
+          "Maximum A Posteriori (MAP)",
+          "Distribuições de Probabilidade",
+          "Prior e Posterior"
+        ]
+      },
+      {
+        "id": "mat-4",
+        "titulo": "Divergência de Kullback-Leibler e Entropia Cruzada",
+        "descricao": "Por que usamos Cross-Entropy em redes neurais? Descubra como a teoria da informação mede a distância estatística entre duas distribuições de probabilidade.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Divergência KL",
+          "Entropia Cruzada",
+          "Entropia Relativa",
+          "Loss Functions",
+          "Distribuições Discretas"
+        ]
+      },
+      {
+        "id": "mat-5",
+        "titulo": "Otimização Convexa e Gradiente Descendente Estocástico (SGD)",
+        "descricao": "Analise a convergência matemática de algoritmos de otimização, taxas de aprendizado, momentos (Adam, RMSProp) e funções de custo convexas vs não-convexas.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Gradiente Descendente Estocástico",
+          "Otimizador Adam",
+          "Convexidade",
+          "Taxa de Aprendizado (Learning Rate)",
+          "Mínimos Locais"
+        ]
+      },
+      {
+        "id": "mat-6",
+        "titulo": "Derivação Automática e Backpropagation Tensorial",
+        "descricao": "Entenda a aplicação da Regra da Cadeia em grafos computacionais direcionados (DAGs) no modo reverso (Reverse-mode Automatic Differentiation).",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Regra da Cadeia",
+          "Grafo Computacional",
+          "Diferenciação Automática Reversa",
+          "Gradientes de Tensores",
+          "Backpropagation"
+        ]
+      },
+      {
+        "id": "mat-7",
+        "titulo": "Álgebra do Mecanismo de Atenção dos Transformers",
+        "descricao": "Desmonte a equação Query, Key, Value com Softmax escalonada: entenda por que o produto escalar matricial calcula relevância semântica contextual.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Scaled Dot-Product Attention",
+          "Projeções Q, K, V",
+          "Multi-Head Attention",
+          "Softmax Matricial",
+          "Positional Encoding"
+        ]
+      },
+      {
+        "id": "mat-8",
+        "titulo": "Teoria do Aprendizado Estatístico e Teorema No Free Lunch",
+        "descricao": "Investigue o dilema Viés-Variância, Dimensão VC (Vapnik-Chervonenkis) e por que nenhum algoritmo de aprendizado é universalmente superior em todos os cenários.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Dilema Viés-Variância",
+          "Dimensão VC",
+          "Teorema No Free Lunch",
+          "Capacidade do Modelo",
+          "Generalização Estatística"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "criptografia-seguranca",
+    "nome": "Criptografia e Teoria dos Números",
+    "descricao": "Aritmética Modular, Curvas Elípticas, RSA, Zero-Knowledge Proofs e Hashing",
+    "temas": [
+      {
+        "id": "cripto-1",
+        "titulo": "Aritmética Modular e Pequeno Teorema de Fermat",
+        "descricao": "A base da criptografia moderna: congruências modulares, Algoritmo Estendido de Euclides para cálculo de inversos e o Pequeno Teorema de Fermat.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Aritmética Modular",
+          "Pequeno Teorema de Fermat",
+          "Algoritmo de Euclides Estendido",
+          "Inverso Modular",
+          "Coprimos"
+        ]
+      },
+      {
+        "id": "cripto-2",
+        "titulo": "Criptografia de Chave Pública e Algoritmo RSA",
+        "descricao": "Compreenda a mecânica matemática que permite a duas pessoas conversarem em segredo sem terem combinado uma senha prévia, baseada na dificuldade de fatorar primos gigantes.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Função Totiente de Euler",
+          "Chave Pública e Privada",
+          "Fatoração de Inteiros",
+          "Assinatura Digital",
+          "Padding OAEP"
+        ]
+      },
+      {
+        "id": "cripto-3",
+        "titulo": "Criptografia de Curvas Elípticas (ECC)",
+        "descricao": "Por que chaves de 256 bits em curvas elípticas são mais seguras que chaves RSA de 3072 bits? Estude a geometria de adição de pontos sobre corpos finitos.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Curvas de Weierstrass",
+          "Adição de Pontos",
+          "Problema do Logaritmo Discreto",
+          "ECDSA e Ed25519",
+          "Corpos Finitos Galois"
+        ]
+      },
+      {
+        "id": "cripto-4",
+        "titulo": "Funções Hash Criptográficas e Construção de Merkle-Damgård",
+        "descricao": "Analise as propriedades matemáticas de resistência a colisões e pré-imagens, o efeito avalanche e como cifras de bloco se tornam funções hash unidirecionais.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Construção de Merkle-Damgård",
+          "Resistência a Colisões",
+          "Efeito Avalanche",
+          "SHA-256 vs SHA-3 (Keccak)",
+          "Ataque do Aniversário"
+        ]
+      },
+      {
+        "id": "cripto-5",
+        "titulo": "Cifras de Bloco e Redes de Permutação-Substituição (SPN)",
+        "descricao": "Explore o funcionamento interno do padrão AES (Advanced Encryption Standard): rodadas de SubBytes, ShiftRows, MixColumns e AddRoundKey.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Rede de Substituição-Permutação (SPN)",
+          "Padrão AES",
+          "Caixas S (S-Boxes)",
+          "Confusão e Difusão de Shannon",
+          "Chaves de Rodada"
+        ]
+      },
+      {
+        "id": "cripto-6",
+        "titulo": "Provas de Conhecimento Zero (Zero-Knowledge Proofs)",
+        "descricao": "Estude como provar matematicamente que você sabe um segredo sem revelar absolutamente nenhuma informação sobre o próprio segredo (ZK-SNARKs).",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Zero-Knowledge Proofs",
+          "ZK-SNARKs",
+          "Completude e Solidez",
+          "Circuitos Aritméticos",
+          "Polinômios de Confidencialidade"
+        ]
+      },
+      {
+        "id": "cripto-7",
+        "titulo": "Troca de Chaves Diffie-Hellman e Perfect Forward Secrecy",
+        "descricao": "Como estabelecer um segredo compartilhado sobre um canal público inseguro e por que chaves efêmeras garantem que dados antigos não possam ser descriptografados no futuro.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Diffie-Hellman",
+          "ECDH Efêmero",
+          "Perfect Forward Secrecy",
+          "Man-in-the-Middle",
+          "Geração de Chave de Sessão"
+        ]
+      },
+      {
+        "id": "cripto-8",
+        "titulo": "Criptografia Pós-Quântica e Teoria de Reticulados (Lattices)",
+        "descricao": "Investigue os novos padrões criptográficos projetados para resistir ao Algoritmo de Shor em computadores quânticos através de problemas de vetores em reticulados (LWE).",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Learning With Errors (LWE)",
+          "Criptografia em Reticulados",
+          "Algoritmo de Shor",
+          "Padrões NIST PQC",
+          "Vetor Mais Próximo (CVP)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teoria-bancos-dados",
+    "nome": "Teoria de Bancos de Dados e Armazenamento",
+    "descricao": "Álgebra Relacional, B-Trees vs LSM-Trees, MVCC, Algoritmo ARIES e WAL",
+    "temas": [
+      {
+        "id": "bd-1",
+        "titulo": "Álgebra Relacional e Teoria de Otimização de Consultas",
+        "descricao": "Compreenda a fundamentação matemática do modelo relacional de Edgar F. Codd: operadores de projeção, seleção, junção cartesiana e reescrita de planos de consulta.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Álgebra Relacional de Codd",
+          "Plano de Execução Lógico e Físico",
+          "Estimativa de Cardinalidade",
+          "Pushdown de Predicados",
+          "Heurísticas de Join"
+        ]
+      },
+      {
+        "id": "bd-2",
+        "titulo": "Estruturas de Armazenamento: Árvores B vs LSM-Trees",
+        "descricao": "O trade-off definitivo de armazenamento: por que bancos de leitura usam B+ Trees (in-place updates) e bancos de escrita intensiva usam Log-Structured Merge-Trees.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "B+ Trees vs LSM-Trees",
+          "Memtable e SSTables",
+          "Processo de Compaction",
+          "Amplificação de Escrita",
+          "Leituras Sequenciais"
+        ]
+      },
+      {
+        "id": "bd-3",
+        "titulo": "Teoria da Serializabilidade e Níveis de Isolamento ACID",
+        "descricao": "Estude os grafos de precedência de conflito e as anomalias formais de concorrência: Dirty Reads, Non-Repeatable Reads, Phantom Reads e Write Skew.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Serializabilidade por Conflito",
+          "Grafo de Precedência",
+          "Phantom Read",
+          "Write Skew",
+          "Níveis de Isolamento ANSI SQL"
+        ]
+      },
+      {
+        "id": "bd-4",
+        "titulo": "Controle de Concorrência Multiversão (MVCC)",
+        "descricao": "Descubra como motores como PostgreSQL e InnoDB permitem que leituras nunca bloqueiem escritas guardando múltiplas versões de cada tupla no tempo.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "MVCC",
+          "Snapshot Isolation",
+          "Tuplas com xmin e xmax",
+          "Processo de Vacuum",
+          "Controle de Visibilidade"
+        ]
+      },
+      {
+        "id": "bd-5",
+        "titulo": "Write-Ahead Logging (WAL) e Algoritmo ARIES",
+        "descricao": "Como garantir durabilidade e recuperação instantânea após quedas de energia: a sequência de logs WAL e as três fases do algoritmo ARIES (Analysis, Redo, Undo).",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Write-Ahead Logging (WAL)",
+          "Algoritmo ARIES",
+          "Fase de Redo e Undo",
+          "Log Sequence Number (LSN)",
+          "Checkpoints"
+        ]
+      },
+      {
+        "id": "bd-6",
+        "titulo": "Índices Vetoriais e Grafos Hierárquicos (HNSW)",
+        "descricao": "A teoria de indexação para bancos de vetores da era da IA: busca aproximada de vizinhos mais próximos (k-ANN) com Hierarchical Navigable Small World e cosine distance.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "HNSW Graphs",
+          "Busca Aproximada (k-ANN)",
+          "Distância Cosseno",
+          "Embeddings Multidimensionais",
+          "Skip-List Multidimensional"
+        ]
+      },
+      {
+        "id": "bd-7",
+        "titulo": "Teoria da Normalização e Dependências Funcionais",
+        "descricao": "A prova matemática de decomposição sem perda de informação e preservação de dependências da Primeira até a Forma Normal de Boyce-Codd (BCNF).",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Dependência Funcional",
+          "Forma Normal de Boyce-Codd (BCNF)",
+          "Terceira Forma Normal (3FN)",
+          "Fecho de Atributos",
+          "Decomposição Sem Perda"
+        ]
+      },
+      {
+        "id": "bd-8",
+        "titulo": "Mecanismos de Bloqueio em Duas Fases (2PL)",
+        "descricao": "Analise a técnica de controle de concorrência pessimista: fase de crescimento (adquirir travas) e fase de encolhimento (liberar travas) e a prevenção de inconsistências.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Two-Phase Locking (2PL)",
+          "Strict 2PL",
+          "Travas Compartilhadas e Exclusivas",
+          "Prevenção de Cascading Aborts",
+          "Deadlock Detection"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redes-comunicacao",
+    "nome": "Redes e Teoria da Comunicação",
+    "descricao": "Controle de Congestionamento TCP, QUIC, Roteamento em Grafos, Epoll e TLS",
+    "temas": [
+      {
+        "id": "redes-1",
+        "titulo": "Controle de Fluxo e Janela Deslizante do TCP",
+        "descricao": "Entenda como o protocolo de transporte garante entrega ordenada e confiável sem estourar o buffer do receptor usando janelas deslizantes e números de sequência.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Janela Deslizante",
+          "Número de Sequência e ACK",
+          "Buffer de Recepção",
+          "Controle de Fluxo",
+          "Reordenação de Pacotes"
+        ]
+      },
+      {
+        "id": "redes-2",
+        "titulo": "Controle de Congestionamento: Algoritmos Reno e Cubic",
+        "descricao": "Estude como a internet evita o colapso por sobrecarga: Slow Start, Congestion Avoidance, Fast Retransmit e a função cúbica de crescimento da janela do TCP Cubic.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "TCP Cubic",
+          "Slow Start",
+          "Fast Retransmit",
+          "AIMD (Additive Increase Multiplicative Decrease)",
+          "Threshold de Congestionamento"
+        ]
+      },
+      {
+        "id": "redes-3",
+        "titulo": "Roteamento em Grafos Globais: BGP e OSPF",
+        "descricao": "Como pacotes encontram o caminho mais curto na escala da internet: algoritmos de vetor de distâncias, estado de enlace (Dijkstra) e políticas autônomas do protocolo BGP.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "Border Gateway Protocol (BGP)",
+          "OSPF e Estado de Enlace",
+          "Sistemas Autônomos (AS)",
+          "Algoritmo de Bellman-Ford",
+          "Tabelas de Roteamento"
+        ]
+      },
+      {
+        "id": "redes-4",
+        "titulo": "Protocolo QUIC e a Transição para HTTP/3 sobre UDP",
+        "descricao": "Por que o TCP é lento para a web moderna e como o protocolo QUIC elimina o Head-of-Line Blocking integrando criptografia TLS 1.3 diretamente na camada de transporte.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Protocolo QUIC",
+          "Head-of-Line Blocking no TCP",
+          "0-RTT Handshake",
+          "Multiplexação de Streams",
+          "HTTP/3"
+        ]
+      },
+      {
+        "id": "redes-5",
+        "titulo": "Handshake Criptográfico do TLS 1.3",
+        "descricao": "Desmonte os passos de troca de chaves da criptografia web: certificados X.509, assinaturas digitais, troca de chaves Diffie-Hellman efêmera e redução de latência.",
+        "nivel": "Intermediário",
+        "topicosChave": [
+          "TLS 1.3 Handshake",
+          "Certificados X.509",
+          "Cadeia de Confiança (PKI)",
+          "Criptografia de Sessão",
+          "1-RTT Connection"
+        ]
+      },
+      {
+        "id": "redes-6",
+        "titulo": "I/O Multiplexing em Baixo Nível: Epoll e Event Loops",
+        "descricao": "Como um único servidor consegue lidar com 1 milhão de conexões simultâneas (o problema C10K) usando chamadas de sistema eficientes como epoll, kqueue e io_uring.",
+        "nivel": "Avançado",
+        "topicosChave": [
+          "Problema C10K",
+          "Syscall Epoll",
+          "Edge-Triggered vs Level-Triggered",
+          "Event Loop",
+          "Non-blocking I/O"
+        ]
+      },
+      {
+        "id": "redes-7",
+        "titulo": "Teoria da Codificação e Detecção de Erros (CRC e Hamming)",
+        "descricao": "Como os pacotes detectam ruídos eletromagnéticos no cabo: o polinômio gerador de CRC (Cyclic Redundancy Check) e os códigos corretores de erro de Hamming.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Cyclic Redundancy Check (CRC)",
+          "Distância de Hamming",
+          "Códigos Corretores de Erro",
+          "Paridade de Bits",
+          "Integridade de Dados"
+        ]
+      },
+      {
+        "id": "redes-8",
+        "titulo": "Arquitetura e Resolução Recursiva do DNS",
+        "descricao": "A árvore hierárquica global de nomes da internet: Root Servers, TLD Servers, servidores autoritativos, queries recursivas versus iterativas e segurança com DNSSEC.",
+        "nivel": "Iniciante",
+        "topicosChave": [
+          "Root Servers",
+          "TLD e Servidores Autoritativos",
+          "Resolução Recursiva",
+          "Cache TTL",
+          "DNSSEC"
         ]
       }
     ]

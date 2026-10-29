@@ -132,9 +132,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--text-title);
   margin-bottom: 0;
-  display: inline-flex;
-  align-items: flex-start;
-  justify-content: center;
+  display: inline-block;
   position: relative;
 }
 
@@ -152,8 +150,9 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 6px;
-  transform: translateY(-8px);
+  position: absolute;
+  top: 2px;
+  left: calc(100% + 6px);
   transition: all 0.2s ease;
   line-height: 1;
 }
@@ -162,7 +161,7 @@ body {
   background-color: var(--color-burgundy);
   color: #ffffff;
   border-color: var(--color-burgundy);
-  transform: translateY(-8px) scale(1.1);
+  transform: scale(1.1);
   box-shadow: 0 2px 8px rgba(108, 8, 32, 0.35);
 }
 

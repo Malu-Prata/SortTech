@@ -254,12 +254,18 @@ function revelarTemaFinal(tema, comEfeitos) {
   }
 }
 
+function formatarDataHistorico(d = new Date()) {
+  const dia = d.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
+  const hora = d.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+  return `${dia} às ${hora}`;
+}
+
 function adicionarAoHistorico(area, tema) {
   historico.unshift({
     areaNome: area.nome,
     temaTitulo: tema.titulo,
     temaNivel: tema.nivel,
-    data: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+    data: formatarDataHistorico(new Date())
   });
 
   if (historico.length > 15) {

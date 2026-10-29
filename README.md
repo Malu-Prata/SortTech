@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Typography: Forum](https://img.shields.io/badge/Typography-Forum-6C0820.svg)](https://fonts.google.com/specimen/Forum)
 
-Aplicação interativa projetada para dinamizar e estruturar a rotina de estudos em tecnologia, auxiliando estudantes e profissionais a vencerem a paralisia por escolha através de sorteios direcionados, tópicos essenciais e um temporizador de foco dedicado.
+Aplicação interativa projetada para dinamizar e aprofundar os estudos em **Teoria da Computação e Fundamentos da Ciência da Computação**. Na era em que ferramentas de Inteligência Artificial geram código automaticamente, o verdadeiro diferencial técnico do desenvolvedor e cientista da computação está em compreender a fundo o que acontece por trás do código: autômatos, complexidade, arquitetura de computadores, compiladores, sistemas operacionais e matemática aplicada.
 
 Desenvolvido por **Maria Luiza Prata**:
 - LinkedIn: [linkedin.com/in/maria-luiza-prata-a342812b3](https://www.linkedin.com/in/maria-luiza-prata-a342812b3)
@@ -15,10 +15,10 @@ Desenvolvido por **Maria Luiza Prata**:
 
 ## Proposta e Metodologia
 
-O **SortTech** foi idealizado para resolver um desafio comum a desenvolvedores: a grande quantidade de assuntos a estudar e a indecisão na hora de sentar para praticar.
+O **SortTech** foi idealizado para transformar o estudo teórico em uma prática dinâmica e consistente.
 
-A ferramenta reúne **10 grandes áreas da computação** e **90 temas práticos de estudo**. O fluxo foi pensado para ir da escolha à prática em poucos segundos:
-1. **Seleção Direcionada ou Livre**: Escolha uma ou mais áreas clicando nos botões em pílula, ou deixe desmarcado para sortear entre todo o ecossistema de tecnologia.
+A ferramenta reúne **10 grandes áreas fundamentais da computação** e **80 temas aprofundados de estudo**. O fluxo foi pensado para ir da escolha à prática em poucos segundos:
+1. **Seleção Direcionada ou Livre**: Escolha uma ou mais áreas clicando nos botões em pílula, ou deixe desmarcado para sortear entre todo o ecossistema fundamental de computação.
 2. **Sorteio com Efeitos Suaves**: Ao clicar em Sortear, um algoritmo anti-repetição escolhe um tema, acompanhado de animação de embaralhamento (*shuffle*), efeitos sonoros gerados por síntese de áudio (Web Audio API) e partículas nas cores da paleta.
 3. **Foco Visual sem Distrações**: O tema sorteado ganha destaque no centro da tela de forma fluida, sem caixas pesadas ou placeholders vazios.
 4. **Tópicos-Chave Retráteis**: Detalhes do que estudar organizados em tópicos limpos, abertos sob demanda por uma seta discreta.
@@ -27,18 +27,18 @@ A ferramenta reúne **10 grandes áreas da computação** e **90 temas práticos
 
 ---
 
-## As 10 Áreas da Computação Disponíveis (90 Temas)
+## As 10 Áreas Fundamentais da Computação (80 Temas)
 
-1. **Desenvolvimento Web e Mobile** (10 temas): APIs RESTful, GraphQL, Componentização, JWT, Web Vitals, PWAs, TypeScript, WebSockets, SSR e Design Responsivo.
-2. **Inteligência Artificial e Dados** (10 temas): Redes Neurais, Transformers, LLMs, Machine Learning, RAG, Análise Exploratória, CNNs, Métricas de Avaliação, Embeddings e Ética em IA.
-3. **Cibersegurança e Redes** (10 temas): OWASP Top 10, Criptografia Simétrica/Assimétrica, Modelo OSI, Zero Trust, Wireshark, Prevenção a Phishing, DDoS, Autenticação MFA, Pentest e Forense Digital.
-4. **Engenharia de Software e Algoritmos** (10 temas): Padrões GoF, SOLID, Código Limpo, Estruturas de Dados, Notação Big-O, TDD, Arquitetura Limpa, Concorrência, Microsserviços e Refatoração.
-5. **DevOps e Cloud Computing** (10 temas): Docker, Kubernetes, CI/CD com GitHub Actions, Terraform, Observabilidade, Estratégias de Deploy, AWS/GCP, Linux para Servidores, GitOps e Segurança em Pipelines.
-6. **Desenvolvimento de Jogos** (8 temas): Game Loops, Motores de Jogos, Shaders, Física de Jogos, IA para Jogos, Áudio Interativo, Otimização de Performance e Multiplayer.
-7. **Engenharia de Dados** (8 temas): Pipelines ETL/ELT, Data Lakes, Apache Kafka, Modelagem Dimensional, Orquestração com Airflow, Processamento com Spark, Qualidade de Dados e Governança.
-8. **Sistemas de Baixo Nível** (8 temas): Gerenciamento de Memória, Ponteiros em C/C++, Compiladores, Sistemas Operacionais, Assembly, Drivers e Kernel, Concorrência em Baixo Nível e Arquitetura de Processadores.
-9. **Qualidade e Testes de Software** (8 temas): Pirâmide de Testes, Cypress e Playwright, Testes de Carga com k6, BDD, Testes de Regressão, Mocks, Testes de Acessibilidade e Automação de APIs.
-10. **Design de Interface e Acessibilidade** (8 temas): Diretrizes WCAG, Design Systems, Heurísticas de Nielsen, Microinterações, Arquitetura de Informação, Tipografia Digital, Pesquisa com Usuários e Prototipação.
+1. **Teoria da Computação e Complexidade** (8 temas): Autômatos Finitos e DFA/NFA, Gramáticas Livres de Contexto, Máquinas de Turing, Problema da Parada e Indecidibilidade, Classes P, NP e NP-Completude, Teorema de Cook-Levin, Complexidade de Espaço (PSPACE) e Teoria da Informação de Shannon.
+2. **Algoritmos e Estruturas de Dados Fundamentais** (8 temas): Algoritmos em Grafos e Fluxo Máximo, Árvores Balanceadas (AVL e Red-Black), Programação Dinâmica, Estruturas Probabilísticas (Filtros de Bloom e HyperLogLog), Teorema Mestre e Análise Amortizada, FFT e Karatsuba, Matróides e Algoritmos Aproximativos.
+3. **Compiladores e Teoria de Linguagens** (8 temas): Análise Léxica e Tabelas de Símbolos, Parsing e Árvores Sintáticas Abstratas (AST), Sistema de Tipagem Hindley-Milner, Representação SSA (Static Single Assignment), Otimizações de Código, Garbage Collection, Máquinas Virtuais e Compilação JIT.
+4. **Arquitetura de Computadores e Hardware** (8 temas): Hierarquia de Memória e Coerência de Cache (MESI), Pipelining e Hazards, Previsão de Desvios e Execução Especulativa, Memória Virtual e TLB, RISC vs CISC, Processamento Vetorial SIMD, DMA e Barramentos, e Aritmética IEEE 754.
+5. **Sistemas Operacionais e Concorrência em Baixo Nível** (8 temas): Chamadas de Sistema (Syscalls) e Níveis de Privilégio, Escalonamento CFS e Context Switch, Primitivas Atômicas e Algoritmos Lock-Free, Barreiras de Memória, Condições de Coffman e Deadlocks, Inodes e Sistemas de Arquivos, IPC e Namespaces/Cgroups.
+6. **Sistemas Distribuídos e Teoria do Consenso** (8 temas): Teoremas CAP e PACELC, Algoritmos de Consenso Raft e Paxos, Relógios Lógicos de Lamport e Vector Clocks, Two-Phase Commit (2PC), Tolerância a Falhas Bizantinas (BFT), Modelos de Consistência e Linearizabilidade, Hashing Consistente e Protocolos Gossip.
+7. **Fundamentos Matemáticos da IA** (8 temas): Álgebra Linear e Decomposição SVD, Cálculo Multivariável e Matriz Hessiana, Inferência Bayesiana e MLE, Divergência de Kullback-Leibler, Otimização Convexa e SGD, Diferenciação Automática e Backpropagation, Álgebra dos Transformers e Teoria do Aprendizado Estatístico.
+8. **Criptografia e Teoria dos Números** (8 temas): Aritmética Modular e Teorema de Fermat, Algoritmo RSA e Fatoração, Criptografia de Curvas Elípticas (ECC), Funções Hash e Merkle-Damgård, Cifras de Bloco e Redes SPN, Zero-Knowledge Proofs (ZKP), Troca de Chaves Diffie-Hellman e Criptografia Pós-Quântica.
+9. **Teoria de Bancos de Dados e Armazenamento** (8 temas): Álgebra Relacional e Planos de Consulta, Árvores B+ vs LSM-Trees, Serializabilidade e Níveis de Isolamento ACID, Controle de Concorrência MVCC, Write-Ahead Logging (WAL) e Algoritmo ARIES, Índices Vetoriais HNSW, Formas Normais e 2PL.
+10. **Redes e Teoria da Comunicação** (8 temas): Controle de Fluxo e Janela Deslizante TCP, Controle de Congestionamento (Reno e Cubic), Roteamento Global com BGP e Dijkstra, Protocolo QUIC e HTTP/3, Handshake TLS 1.3, Multiplexação de I/O com Epoll, Teoria da Codificação e CRC, e Resolução de Nomes DNS.
 
 ---
 
